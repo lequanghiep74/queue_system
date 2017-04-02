@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import font google-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--Import font-awesome-->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
+
+    <!--Import jQuery js-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+
+    <!--Import materialize-->
+    <link rel="stylesheet" href="../bower_components/materialize/dist/css/materialize.css">
+
+    <!--Import style.css-->
+    <link rel="stylesheet" href="../resource/css/choose-bus.css">
+
+
+    <!--Import materialize js-->
+    <script src="../bower_components/materialize/dist/js/materialize.js"></script>
+
+    <!--Import custom js-->
+    <script src="../resource/js/choose-bus.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<nav id="nav-color">
+    <div class="nav-wrapper">
+        <a href="#!" class="center brand-logo">Choose Bus</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Choose Bus</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#">Choose Bus</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+</nav>    <!--end nav-->
+
+<section class="container">
+    <div class="row"><h3 class="center">Choose bus</h3></div>
+    <div class="row">
+        <form class="col s12 m12" action="#">
+            <div class="row" id="bus-station">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <select class="icons">
+                        <optgroup label="BUS STATION">
+                            <option value="" class="circle">station 1</option>
+                            <option value="" class="circle">station 2</option>
+                            <option value="" class="circle">station 3</option>
+                        </optgroup>
+                    </select>
+                    <label>Choose bus station</label>
+                </div>
+            </div>
+
+            <!--Place start-->
+            <div class="row" id="place-start">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <select class="icons">
+                        <optgroup label="PLACE 1">
+                            <option value="" class="circle">location 1</option>
+                            <option value=""  class="circle">location 2</option>
+                            <option value=""  class="circle">location 3</option>
+                        </optgroup>
+                        <optgroup label="PLACE 2">
+                            <option value=""  class="circle">location 1</option>
+                            <option value=""  class="circle">location 2</option>
+                            <option value=""  class="circle">location 3</option>
+                        </optgroup>
+                    </select>
+                    <label>Choose place start</label>
+                </div>
+            </div>
+            <!--place to-->
+            <div class="row" id="place-to">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <select class="icons">
+                        <optgroup label="PLACE 1">
+                            <option value=""  class="circle">location 1</option>
+                            <option value=""  class="circle">location 2</option>
+                            <option value=""  class="circle">location 3</option>
+                        </optgroup>
+                        <optgroup label="PLACE 2">
+                            <option value=""  class="circle">location 1</option>
+                            <option value=""  class="circle">location 2</option>
+                            <option value=""  class="circle">location 3</option>
+                        </optgroup>
+                    </select>
+                    <label>Choose place to</label>
+                </div>
+            </div>
+
+            <!--Enter date-->
+            <div class="row" id="date-start">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <select class="icons">
+                        <optgroup label="CHOOSE DATE">
+                            <option value=""  class="circle">Date 1</option>
+                            <option value=""  class="circle">Date 2</option>
+                            <option value=""  class="circle">Date 3</option>
+                        </optgroup>
+                    </select>
+                    <label>Start date</label>
+                </div>
+            </div>
+
+            <!--Enter time-->
+            <div class="row" id="time-start">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <select class="icons">
+                        <optgroup label="CHOOSE TIME">
+                            <option value=""  class="circle">Time 1</option>
+                            <option value=""  class="circle">Time 2</option>
+                            <option value=""  class="circle">Time 3</option>
+                        </optgroup>
+                    </select>
+                    <label>Start time</label>
+                </div>
+            </div>
+
+            <!--choose bus-->
+            <div class="row" id="choose-bus">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <select class="icons">
+                        <option value="" disabled selected>Choose bus</option>
+                        <option value=""  class="circle">bus 1</option>
+                        <option value=""  class="circle">bus 2</option>
+                        <option value=""  class="circle">bus 3</option>
+                    </select>
+                    <label>Choose the bus you want</label>
+                </div>
+            </div>
+            <!--submit-->
+            <button class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" type="submit" name="action"
+                    id="submit-btn">
+                Submit
+            </button>
+        </form>
+    </div>
+
+</section>
+
+</body>
+</html>
