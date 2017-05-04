@@ -1,34 +1,3 @@
-<?php
-require "../include/DB.php";
-$db = new DB();
-if (isset($_POST['username'])
-    && isset($_POST['password'])
-    && isset($_POST['full_name'])
-    && isset($_POST['identity_card'])
-    && isset($_POST['day_of_birth'])
-    && isset($_POST['driver_license'])
-    && isset($_POST['staff_id'])
-    && isset($_POST['sex'])
-    && isset($_POST['phone_number'])
-) {
-    $data = $db->queryOneRow("select *from driver");
-    if ($data->num_rows > 0) {
-    } else {
-        $db->query("insert into driver (username, password, fullname,"
-            ." identity_card, dob, driver_license, staff_id, sex, phone)"
-            ."VALUES ('".$_POST['username']."'),"
-            ."'".$_POST['password']."',"
-            ."'".$_POST['fullname']."',"
-            ."'".$_POST['identity_card']."',"
-            ."'".$_POST['dob']."',"
-            ."'".$_POST['driver_license']."',"
-            ."'".$_POST['staff_id']."',"
-            ."".$_POST['sex'].","
-            ."'".$_POST['phone']."',"
-            .");");
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,7 +47,7 @@ if (isset($_POST['username'])
 <section class="container">
     <h5></h5>
     <div class="row">
-        <form class="col s12" action="register.php" method="POST">
+        <form class="col s12" action="register.html" method="POST">
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
                     <input name="username" placeholder="Enter username" id="username" type="text" class="validate">

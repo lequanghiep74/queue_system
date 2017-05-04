@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="634eeb55-2539-4329-9800-f6bcee346310" name="Default" comment="" />
+    <list default="true" id="c1934b88-2ff6-42bd-af51-7f2f15ee8bbb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/driver/chooseBus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/driver/history.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/driver/register.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/general/getBus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/general/getCoachStations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/general/getLocations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/general/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/student/register.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/driver/history-2.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/driver/register.php" afterPath="$PROJECT_DIR$/driver/register.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/include/DB.php" afterPath="$PROJECT_DIR$/api/include/DB.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/history.html" afterPath="$PROJECT_DIR$/driver/history.html" />
+    </list>
     <ignored path="queue.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -21,104 +35,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/driver/register.php">
+      <file leaf-file-name="choose-bus.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/student/choose-bus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-              <folding>
-                <marker date="1491142465736" expanded="true" signature="394:413" ph="select *from... driver" />
-                <marker date="1491142465736" expanded="true" signature="481:530" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="481:604" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="481:629" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="481:653" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="481:654" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="481:671" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="481:995" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="481:996" ph="insert into driver... " />
-                <marker date="1491142465736" expanded="true" signature="1049:1068" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2145:2345" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2362:4532" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2383:2491" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2413:2484" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2538:4532" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2574:4532" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2641:4532" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2671:2962" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2744:2943" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="2992:3286" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="3065:3267" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="3316:3611" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="3389:3592" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="3641:3983" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="3714:3964" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="3828:3872" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="4014:4353" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="4087:4334" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="4184:4244" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="4384:4532" ph="..." />
-                <marker date="1491142465736" expanded="true" signature="4457:4532" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop/info.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <marker date="1491130845783" expanded="true" signature="192:221" ph="select *from... item" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/show.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="18" />
-              <folding>
-                <marker date="1491130845731" expanded="true" signature="156:173" ph="select *from... item" />
-                <marker date="1491130845731" expanded="true" signature="268:296" ph="delete from " />
-                <marker date="1491130845731" expanded="true" signature="652:953" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/DB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/insert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding>
-                <marker date="1491130845757" expanded="true" signature="270:333" ph="insert into item... " />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/driver/register.html" />
-        <option value="$PROJECT_DIR$/include/DB.php" />
-        <option value="$PROJECT_DIR$/driver/register.php" />
+        <option value="$PROJECT_DIR$/api/general/getBusLocations.php" />
+        <option value="$PROJECT_DIR$/api/general/getBusCoachStations.php" />
+        <option value="$PROJECT_DIR$/api/general/getBus.php" />
       </list>
     </option>
   </component>
@@ -127,6 +64,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -190,7 +130,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
+              <option name="myItemId" value="student" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,6 +141,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="student" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -218,6 +180,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="driver" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -230,8 +214,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\queue\api\general" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -278,19 +265,22 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="634eeb55-2539-4329-9800-f6bcee346310" name="Default" comment="" />
-      <created>1491130653922</created>
+      <changelist id="c1934b88-2ff6-42bd-af51-7f2f15ee8bbb" name="Default" comment="" />
+      <created>1493696910750</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1491130653922</updated>
-      <workItem from="1491130655173" duration="5465000" />
+      <updated>1493696910750</updated>
+      <workItem from="1493696911930" duration="408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5465000" />
+    <option name="totallyTimeSpent" value="408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -331,149 +321,39 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ptb1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indexItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/a.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/abc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/driver/choose-bus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1491130845806" expanded="true" signature="183:211" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/driver/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <marker date="1491142465736" expanded="true" signature="394:413" ph="select *from... driver" />
-            <marker date="1491142465736" expanded="true" signature="481:530" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="481:604" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="481:629" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="481:653" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="481:654" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="481:671" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="481:995" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="481:996" ph="insert into driver... " />
-            <marker date="1491142465736" expanded="true" signature="1049:1068" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2145:2345" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2362:4532" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2383:2491" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2413:2484" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2538:4532" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2574:4532" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2641:4532" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2671:2962" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2744:2943" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="2992:3286" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="3065:3267" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="3316:3611" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="3389:3592" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="3641:3983" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="3714:3964" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="3828:3872" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="4014:4353" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="4087:4334" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="4184:4244" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="4384:4532" ph="..." />
-            <marker date="1491142465736" expanded="true" signature="4457:4532" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <marker date="1491130845757" expanded="true" signature="270:333" ph="insert into item... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/show.php">
+    <entry file="file://$PROJECT_DIR$/api/general/getBusCoachStation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="18" />
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/general/getCoachStations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding>
-            <marker date="1491130845731" expanded="true" signature="156:173" ph="select *from... item" />
-            <marker date="1491130845731" expanded="true" signature="268:296" ph="delete from " />
-            <marker date="1491130845731" expanded="true" signature="652:953" ph="..." />
+            <marker date="1493697009408" expanded="true" signature="61:88" ph="select * fro... coach_station" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop/info.php">
+    <entry file="file://$PROJECT_DIR$/api/general/getBus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <marker date="1491130845783" expanded="true" signature="192:221" ph="select *from... item" />
+            <marker date="1493697290192" expanded="true" signature="61:78" ph="select * fro... bus" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/choose-bus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
