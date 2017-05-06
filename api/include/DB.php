@@ -32,6 +32,15 @@ class DB extends \mysqli
         return $result;
     }
 
+    public function insertAndReturnId($sql)
+    {
+        @parent::query($sql);
+        if ($this->error) {
+            return $this->error;
+        }
+        return @parent::insert_id;
+    }
+
     public function queryOneRow($sql)
     {
         $result = @parent::query($sql);
