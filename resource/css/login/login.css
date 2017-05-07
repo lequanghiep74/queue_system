@@ -1,0 +1,140 @@
+﻿@font-face {
+    font-family: 'Bariol-Regular';
+    src: url('../font/Bariol-Regular.eot?#iefix') format('embedded-opentype'), url('../font/Bariol-Regular.woff') format('woff'), url('../font/Bariol-Regular.ttf') format('truetype'), url('../font/Bariol-Regular.svg#Bariol-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+    font-family: 'Bariol-Regular' !important;
+}
+.bg-red{
+    background-color:#e50000;
+    height:93vh;
+}
+.Title_AUspark_login{
+    font-size:4vmax;
+}
+.white-text{
+    color:white;
+}
+.font-weight{
+    font-weight: bold;
+}
+.box_AU_text_login {
+    /*width: 420px;*/
+    height: auto;
+    /*overflow: auto;*/
+    margin: 50px auto;
+}
+.input_username_login {
+    width: 85%;
+    float: none;
+    overflow: auto;
+    height: auto;
+    text-align: center;
+    padding: 2px 10px;
+    margin: 3px auto;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.input_password_login {
+    width: 85%;
+    overflow: auto;
+    height: auto;
+    text-align: center;
+    padding: 2px 10px;
+    margin: 3px auto;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.92);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.box_button_action_login .button_submit_login {
+    float: none;
+    margin: 0px auto;
+    overflow: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.20);
+    padding: 5px 20px 6px 20px;
+    border-radius: 7px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.login_box_link_url{
+    margin-top:-35px;
+}
+.login_box_link_url > a {
+    color: #fff;
+}
+a {
+    color: #337ab7;
+    text-decoration: underline;
+    font-size:20px;
+}
+.mt-60{
+    margin-top:60px;
+}
+.mt-12{
+    margin-top:12px;
+}
+.pt-60{
+    padding-top:60px;
+}
+.footer{
+    position:absolute;
+    bottom:6vh;
+    left:50%;
+    transform: translate(-50%);
+}
+@media screen and (min-width: 970px){
+    .input_username_login {
+        width: 30%;
+        float: none;
+        overflow: auto;
+        height: auto;
+        text-align: center;
+        padding: 2px 10px;
+        margin: 3px auto;
+        background-color: rgba(255, 255, 255, 0.92);
+        border-radius: 3px;
+        border: none;
+        font-size: 16px;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    .input_password_login {
+        width: 30%;
+        overflow: auto;
+        height: auto;
+        text-align: center;
+        padding: 2px 10px;
+        margin: 3px auto;
+        border-radius: 3px;
+        border: none;
+        font-size: 16px;
+        background-color: rgba(255, 255, 255, 0.92);
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+
+}
