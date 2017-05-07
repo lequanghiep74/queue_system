@@ -11,7 +11,7 @@ class DB extends \mysqli
     public $host = "localhost:3306";
     public $user = "root";
     public $password = "root";
-    public $dbName = "queue_system";
+    public $dbName = "mydb";
 
     public function __construct($host = null, $user = null, $password = null, $dbName = null)
     {

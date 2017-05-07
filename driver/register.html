@@ -26,7 +26,7 @@
     <script src="../bower_components/materialize/dist/js/materialize.js"></script>
 
     <!--Import custom js-->
-    <script src="../resource/js/register.js"></script>
+    <script src="../resource/js/driver/register.js"></script>
 
     <!--import clockpicker-->
 
@@ -47,36 +47,36 @@
 <section class="container">
     <h5></h5>
     <div class="row">
-        <form class="col s12" action="register.html" method="POST">
+        <form class="col s12">
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input name="username" placeholder="Enter username" id="username" type="text" class="validate">
+                    <input name="username" required placeholder="Enter username" id="username" type="text" class="validate">
                     <label for="username">User Name</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input name="password" placeholder="Enter password" id="password" type="password" class="validate">
+                    <input name="password" required placeholder="Enter password" id="password" type="password" class="validate">
                     <label for="password">Password</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input name="full_name" placeholder="Enter full name" id="full_name" type="text" class="validate">
+                    <input name="full_name" required placeholder="Enter full name" id="full_name" type="text" class="validate">
                     <label for="full_name">Full Name</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input placeholder="Enter identiry card" id="identity_card" name="identity_card" type="text"
+                    <input placeholder="Enter identiry card" required id="identity_id" name="identity_id" type="text"
                            class="validate">
-                    <label for="identity_card">Identity Card</label>
+                    <label for="identity_id">Identity Id</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input name="day_of_birth" type="date" class="datepicker" id="day_of_birth"
+                    <input name="day_of_birth" required type="date" class="datepicker" id="day_of_birth"
                            placeholder="Enter day of birth">
                     <label for="day_of_birth">Day of birth</label>
                 </div>
@@ -84,7 +84,7 @@
 
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input name="driver_license" placeholder="Enter driver's license" id="driver_license" type="text"
+                    <input name="driver_license" required placeholder="Enter driver's license" id="driver_license" type="text"
                            class="validate">
                     <label for="driver_license">Driver's License</label>
                 </div>
@@ -92,14 +92,14 @@
 
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input name="staff_id" placeholder="Enter staff's id" id="staff_id" type="text" class="validate">
+                    <input name="staff_id" required placeholder="Enter staff's id" id="staff_id" type="text" class="validate">
                     <label for="staff_id">Staff's ID</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <input name="phone_number" placeholder="Enter Phone Number" id="phone_number" type="number"
+                    <input name="phone_number" required placeholder="Enter Phone Number" id="phone_number" type="number"
                            class="validate">
                     <label for="phone_number">Phone Number</label>
                 </div>
@@ -110,21 +110,19 @@
                     <div class="row">
                         <div class="col s12 m12 no-padding">
                             <p class="col s6 m4">
-                                <input name="sex" type="radio" id="male"/>
+                                <input name="sex" type="radio" id="male" value="1" checked/>
                                 <label for="male">Male</label>
                             </p>
                             <p class="col s6 m4">
-                                <input name="sex" type="radio" id="female"/>
+                                <input name="sex" type="radio" value="0" id="female"/>
                                 <label for="female">Female</label>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" type="submit" name="action"
-                    id="submit-btn">
-                Register
-            </button>
+            <input value="Register" type="button" class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" name="action" id="submit-btn">
+            </input>
         </form>
     </div>
 </section>

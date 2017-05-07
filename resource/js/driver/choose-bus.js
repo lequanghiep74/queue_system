@@ -9,4 +9,10 @@ $(document).ready(function () {
         selectYears: 15, // Creates a dropdown of 15 years to control year
         format:'dd/mm/yyyy'
     });
+
+    $("#submit-btn").click(function(){
+        $.ajax({url: "demo_test.txt", success: function(result){
+            $("#div1").html(result);
+        }});
+    });
 });
