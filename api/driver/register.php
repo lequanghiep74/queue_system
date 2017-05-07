@@ -31,7 +31,7 @@ if (isset($_POST['username'])
             header(' ', true, 200);
         } else {
             header(' ', true, 400);
-            echo $query;
+            echo 'Error!!!';
         }
     }
 }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import font google-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--Import font-awesome-->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
+
+    <!--Import jQuery js-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+
+    <!--Import materialize-->
+    <link rel="stylesheet" href="../bower_components/materialize/dist/css/materialize.css">
+
+    <!--Import style.css-->
+    <link rel="stylesheet" href="../resource/css/register.css">
+
+
+    <!--Import materialize js-->
+    <script src="../bower_components/materialize/dist/js/materialize.js"></script>
+
+    <!--Import custom js-->
+    <script src="../resource/js/student/register.js"></script>
+
+    <!--import clockpicker-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav id="nav-color">
+    <div class="nav-wrapper">
+        <a href="#!" class="center brand-logo">REGISTER</a>
+    </div>
+</nav>    <!--end nav-->
+
+<section class="container">
+    <h5></h5>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <input name="username" required placeholder="Enter username" id="username" type="text" class="validate">
+                    <label for="username">User Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <input name="password" required placeholder="Enter password" id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <input name="full_name" required placeholder="Enter full name" id="full_name" type="text" class="validate">
+                    <label for="full_name">Full Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <input placeholder="Enter identiry card" required id="identity_id" name="identity_id" type="text"
+                           class="validate">
+                    <label for="identity_id">Identity Id</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <input name="day_of_birth" required type="date" class="datepicker" id="day_of_birth"
+                           placeholder="Enter day of birth">
+                    <label for="day_of_birth">Day of birth</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <input name="student_no" required placeholder="Enter student's no" id="student_no" type="text" class="validate">
+                    <label for="student_no">Student No</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <input name="phone_number" required placeholder="Enter Phone Number" id="phone_number" type="number"
+                           class="validate">
+                    <label for="phone_number">Phone Number</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s10 m6 offset-s1 offset-m3 inline no-margin">
+                    <div class="row">
+                        <div class="col s12 m12 no-padding">
+                            <p class="col s6 m4">
+                                <input name="sex" type="radio" id="male" value="1" checked/>
+                                <label for="male">Male</label>
+                            </p>
+                            <p class="col s6 m4">
+                                <input name="sex" type="radio" value="0" id="female"/>
+                                <label for="female">Female</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input value="Register" type="button" class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" name="action" id="submit-btn">
+            </input>
+        </form>
+    </div>
+</section>
+</body>
+</html>
