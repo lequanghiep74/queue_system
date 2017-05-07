@@ -7,11 +7,17 @@ if (isset($_POST['username'])
     && isset($_POST['type'])
 ) {
     $data = $db->queryOneRow("select *from " . $_POST['type'] . " where username = '" . $_POST['username'] . "'");
-    if ($data->num_rows > 0) {
-        $_SESSION['user'] = $data[0];
-        header('', true, 200);
+    if ($data != null) {
+        $_SESSION['user'] = $data;
+        header($_SESSION['user'], true, 200);
+        echo 'Login success';
     } else {
-        header(' ', true, 400);
+        header('Username or password is invalid', true, 400);
+        echo 'Username or password is invalid';
     }
+}
+else {
+    header('Missing data', true, 400);
+    echo 'Missing data';
 }
 ?>

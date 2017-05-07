@@ -1,6 +1,3 @@
-/**
- * Created by thuan on 3/19/2017.
- */
 $(document).ready(function () {
     $(".button-collapse").sideNav();
     $('select').material_select();
@@ -32,6 +29,7 @@ $(document).ready(function () {
             data: obj,
             success: function () {
                 alert("Register Success");
+                window.location.replace("login.html");
             },
             error: function (error) {
                 alert(error.responseText);
