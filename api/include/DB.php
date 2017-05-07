@@ -32,13 +32,13 @@ class DB extends \mysqli
         return $result;
     }
 
-    public function insertAndReturnId($sql)
+    public function insertAndReturnId($sql, $table)
     {
         @parent::query($sql);
         if ($this->error) {
             return $this->error;
         }
-        return @parent::insert_id;
+        return @parent::query('SELECT MAX(id) as id FROM ' . $table);
     }
 
     public function queryOneRow($sql)

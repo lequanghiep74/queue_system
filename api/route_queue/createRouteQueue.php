@@ -1,37 +1,45 @@
 <?php
 require "../include/DB.php";
 $db = new DB();
-if (isset($_POST['route_id'])
-    && isset($_POST['driver_id'])
-    && isset($_POST['accept'])
-    && isset($_POST['cancel'])
+session_start();
+if (isset($_POST['from_location_id'])
+    && isset($_POST['to_location_id'])
     && isset($_POST['start_time'])
     && isset($_POST['bus_id'])
 ) {
-    $data = $db->queryOneRow("select *from route_queue "
-        . "where route_id = " . $_POST['route_id']
-        . " and bus_id " . $_POST['bus_id']
-        . " and status = 0"
-        . " and date(start_time) = " . $_POST['start_time']);
-    if ($data->num_rows > 0) {
-        header('', true, 400);
+    $query = "select *from route_queue "
+        . "where bus_id = " . $_POST['bus_id'] . " "
+        . "and status = 0 "
+        . "and from_location_id = " . $_POST['from_location_id'] . " "
+        . "and to_location_id = " . $_POST['to_location_id'] . " "
+        . "and start_time = '" . $_POST['start_time'] . "'";
+    $data = $db->queryOneRow($query);
+    if ($data != null) {
+        header('Duplicate route queue', true, 400);
+        echo 'Route is exists';
     } else {
-        $query = "insert into route_queue (route_id, queue, status,"
-            . " driver_id, accept, cancel, start_time, bus_id)"
-            . "VALUES (" . $_POST['route_id'] . ","
+        $query = "insert into route_queue (queue, status, "
+            . "driver_id, accept, cancel, start_time, bus_id, from_location_id, to_location_id) "
+            . "VALUES (" . 0 . ","
+            . 0 . ","
+            . $_SESSION['user']['id'] . ","
             . 0 . ","
             . 0 . ","
-            . $_POST['driver_id'] . ","
-            . 0 . ","
-            . 0 . ","
-            . $_POST['start_time'] . ","
-            . $_POST['bus_id'] . ");";
-        $id = $db->insertAndReturnId($query);
+            . "'" . $_POST['start_time'] . "',"
+            . $_POST['bus_id'] . ","
+            . $_POST['from_location_id'] . ","
+            . $_POST['to_location_id'] . ");";
+        $id = $db->insertAndReturnId($query, 'route_queue')->fetch_assoc()['id'];
         if ($id != null) {
-            header('{"id": ' . $id . '}', true, 200);
+            header('ok', true, 200);
+            echo '{"id": ' . $id . '}';
         } else {
-            header(' ', true, 400);
+            header('Error!!!', true, 400);
+            echo 'Error!!!';
         }
     }
+} else {
+    header('Missing data', true, 400);
+    echo 'Missing data';
 }
 ?>
