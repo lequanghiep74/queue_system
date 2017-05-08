@@ -26,7 +26,7 @@
     <script src="../bower_components/materialize/dist/js/materialize.js"></script>
 
     <!--Import custom js-->
-    <script src="../resource/js/driver/choose-bus.js"></script>
+    <script src="../resource/js/student/choose-bus.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,7 @@
 <body>
 <nav id="nav-color">
     <div class="nav-wrapper">
-        <a href="#!" class="center brand-logo">CHOOSE BUS</a>
+        <a href="#!" class="center brand-logo">Choose Bus</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Choose Bus</a></li>
@@ -55,82 +55,49 @@
 </nav>    <!--end nav-->
 
 <section class="container">
-    <div class="row"><h3 class="center">Choose bus</h3></div>
-    <div class="row">
+    <div class="row" style="margin-top: 50px">
         <form class="col s12 m12" action="#">
-            <div class="row" id="bus-station">
-                <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <select class="icons">
-                        <optgroup label="BUS STATION">
-                            <option value="" class="circle">station 1</option>
-                            <option value="" class="circle">station 2</option>
-                            <option value="" class="circle">station 3</option>
-                        </optgroup>
-                    </select>
-                    <label>Choose bus station</label>
-                </div>
-            </div>
-
             <!--Place start-->
             <div class="row" id="place-start">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <select class="icons">
-                        <optgroup label="PLACE 1">
-                            <option value="" class="circle">location 1</option>
-                            <option value=""  class="circle">location 2</option>
-                            <option value=""  class="circle">location 3</option>
-                        </optgroup>
-                        <optgroup label="PLACE 2">
-                            <option value=""  class="circle">location 1</option>
-                            <option value=""  class="circle">location 2</option>
-                            <option value=""  class="circle">location 3</option>
-                        </optgroup>
+                    <select class="icons" id="selectFromLocation">
+                        <option selected value="" disabled>Select from location</option>
                     </select>
-                    <label>Choose place start</label>
+                    <label>Choose from location</label>
                 </div>
             </div>
             <!--place to-->
             <div class="row" id="place-to">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <select class="icons">
-                        <optgroup label="PLACE 1">
-                            <option value=""  class="circle">location 1</option>
-                            <option value=""  class="circle">location 2</option>
-                            <option value=""  class="circle">location 3</option>
-                        </optgroup>
-                        <optgroup label="PLACE 2">
-                            <option value=""  class="circle">location 1</option>
-                            <option value=""  class="circle">location 2</option>
-                            <option value=""  class="circle">location 3</option>
-                        </optgroup>
+                    <select class="icons" id="selectToLocation">
+                        <option selected value="" disabled>Select to location</option>
                     </select>
-                    <label>Choose place to</label>
-                </div>
-            </div>
-
-            <!--Enter date-->
-            <div class="row" id="date-start">
-                <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <select class="icons">
-                        <optgroup label="CHOOSE DATE">
-                            <option value=""  class="circle">Date 1</option>
-                            <option value=""  class="circle">Date 2</option>
-                            <option value=""  class="circle">Date 3</option>
-                        </optgroup>
-                    </select>
-                    <label>Start date</label>
+                    <label>Choose to location</label>
                 </div>
             </div>
 
             <!--Enter time-->
             <div class="row" id="time-start">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <select class="icons">
-                        <optgroup label="CHOOSE TIME">
-                            <option value=""  class="circle">Time 1</option>
-                            <option value=""  class="circle">Time 2</option>
-                            <option value=""  class="circle">Time 3</option>
-                        </optgroup>
+                    <select class="icons" id="selectTime">
+                        <option selected disabled>Select time</option>
+                        <option value="5" class="circle">5 am</option>
+                        <option value="6" class="circle">6 am</option>
+                        <option value="7" class="circle">7 am</option>
+                        <option value="8" class="circle">8 am</option>
+                        <option value="9" class="circle">9 am</option>
+                        <option value="10" class="circle">10 am</option>
+                        <option value="11" class="circle">11 am</option>
+                        <option value="12" class="circle">12 pm</option>
+                        <option value="13" class="circle">13 pm</option>
+                        <option value="14" class="circle">14 pm</option>
+                        <option value="15" class="circle">15 pm</option>
+                        <option value="16" class="circle">16 pm</option>
+                        <option value="17" class="circle">17 pm</option>
+                        <option value="18" class="circle">18 pm</option>
+                        <option value="19" class="circle">19 pm</option>
+                        <option value="20" class="circle">20 pm</option>
+                        <option value="21" class="circle">21 pm</option>
                     </select>
                     <label>Start time</label>
                 </div>
@@ -139,23 +106,18 @@
             <!--choose bus-->
             <div class="row" id="choose-bus">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
-                    <select class="icons">
-                        <option value=""  class="circle" selected>bus 1</option>
-                        <option value=""  class="circle">bus 2</option>
-                        <option value=""  class="circle">bus 3</option>
+                    <select class="icons" id="selectBus">
+                        <option value="none" selected disabled>Choose bus</option>
                     </select>
-                    <label>Choose bus</label>
+                    <label>Choose the bus you want</label>
                 </div>
             </div>
             <!--submit-->
-            <button class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" type="submit" name="action"
-                    id="submit-btn">
-                Submit
-            </button>
+            <input class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" type="button" value="Next"
+                   id="submit-btn">
+            </input>
         </form>
     </div>
-
 </section>
-
 </body>
 </html>

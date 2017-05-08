@@ -69,7 +69,7 @@ $(document).ready(function () {
             success: function (data) {
                 data = JSON.parse(data);
                 localStorage.setItem("route_queue_id", data.id);
-                window.location.replace('queue.html');
+                window.location.href = 'queue.html';
             },
             error: function (error) {
                 alert(error.responseText);

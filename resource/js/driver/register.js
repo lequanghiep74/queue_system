@@ -29,7 +29,7 @@ $(document).ready(function () {
             data: obj,
             success: function () {
                 alert("Register Success");
-                window.location.replace("login.html");
+                window.location.href = "login.html";
             },
             error: function (error) {
                 alert(error.responseText);
