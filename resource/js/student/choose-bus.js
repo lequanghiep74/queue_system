@@ -119,7 +119,6 @@ $(document).ready(function () {
             dataType: 'text',
             data: obj,
             success: function (data) {
-                data = JSON.parse(data);
                 localStorage.setItem("route_queue", data);
                 window.location.href = 'get-number.html';
             },

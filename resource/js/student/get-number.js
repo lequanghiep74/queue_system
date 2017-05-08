@@ -4,15 +4,39 @@
 $(document).ready(function () {
     $(".button-collapse").sideNav();
 
+    var route_queue = JSON.parse(window.localStorage.getItem('route_queue'))[0];
+    $('#fromLocation').html('<b>From </b>' + route_queue.from_location);
+    $('#toLocation').html('<b>To </b>' + route_queue.to_location);
+    $('#startTime').html('<b>Time </b>' + route_queue.start_time);
+    $('#bus').html('<b>Bus </b>' + route_queue.plate_no);
+    $('#currentQueue').html('<b>' + route_queue.queue + '</b>');
+
+    $('#btnGetNumber').click(function () {
+        $.ajax({
+            url: "/queue/api/route_queue/enterRouteQueue.php",
+            type: 'post',
+            dataType: 'text',
+            data: {
+                route_queue_id: route_queue.id
+            },
+            success: function () {
+                localStorage.setItem("route_queue", null);
+                window.location.href = 'history.html';
+            },
+            error: function (error) {
+                alert(error.responseText);
+            }
+        });
+    });
+
     // begin js
-    function startTime() {
-        var today=new Date();
-        var h=today.getHours();
-        var m=today.getMinutes();
-        h = h % 12;
-        h = h ? h : 12; // the hour '0' should be '12'
-        h = String(checkTime(h)).split('');
-        m = String(checkTime(m)).split('');
+    function setNum() {
+        var num = '0000';
+        var queue = (parseInt(route_queue.queue) + 1).toString();
+        queue = num.substr(queue.length) + queue;
+
+        var h = [queue[0], queue[1]];
+        var m = [queue[2], queue[3]];
 
         // let's clear the old outgoing
         var oldOutgoing = document.querySelectorAll('.outgoing');
@@ -50,36 +74,7 @@ $(document).ready(function () {
         hoursDizainesOutgoing.className = 'number outgoing';
         hoursUnites.className = 'number is-active';
         hoursUnitesOutgoing.className = 'number outgoing';
-
-        // am pm
-
-        var t = setTimeout(function(){startTime()}, 500);
     }
 
-    function checkTime(i) {
-        if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
-        return i;
-    }
-
-    startTime();
-
-// get the seconds rolling
-    var today=new Date();
-    var s=today.getSeconds();
-    var secondsElement = document.getElementById('seconds');
-
-//     secondsElement.style.webkitAnimation = 'secondsTick 60s ' + -s + 's infinite linear';
-// // apparently webkiteAnimationDelay doesn't work properly, i'm probably missing something but this seems to fix it
-//     secondsElement.style.webkitAnimationPlayState = 'running';
-//
-//     secondsElement.style.mozAnimationDelay = -s + 's';
-//     secondsElement.style.mozAnimationPlayState = 'running';
-//
-//     secondsElement.style.msAnimationDelay = -s + 's';
-//     secondsElement.style.msAnimationPlayState = 'running';
-//
-//     secondsElement.style.animationDelay = -s + 's';
-//     secondsElement.style.animationPlayState = 'running';
-    
-
+    setNum();
 });
