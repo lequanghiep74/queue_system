@@ -1,12 +1,18 @@
-/**
- * Created by thuan on 3/20/2017.
- */
 $(document).ready(function () {
     $(".button-collapse").sideNav();
-    $('select').material_select();
-    $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15, // Creates a dropdown of 15 years to control year
-        format:'dd/mm/yyyy'
-    });
+
+    var getHistory = function getHistory() {
+        $.ajax({
+            url: "/queue/api/student/history.php",
+            dataType: "text",
+            type: 'get',
+            success: function () {
+            },
+            error: function (error) {
+                alert(error.responseText);
+            }
+        });
+    };
+
+    getHistory();
 });

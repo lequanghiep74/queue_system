@@ -1,16 +1,22 @@
 <?php
 require "../include/DB.php";
+session_start();
 $db = new DB();
-$query = "select sq.status, sq.queue, r.from_location.name, r.to_location.name, r.time as route_time, b.bus_no "
-    . "from student_queue sq where student_id = " . $_SESSION['user']['id'] . " "
-    . "INNER JOIN route_queue rq on sq.route_queue_id = rq.id "
-    . "INNER JOIN route r ON rq.route_id = r.id "
-    . "INNER JOIN bus b ON rq.bus_id = b.id "
-    . "INNER JOIN location lc ON r.from_location.id = lc.id "
-    . "INNER JOIN location lc ON r.to_location.id = lc.id";
+$query = "select sq.id, sq.status, sq.route_queue_id, rq.queue, flc.name as from_location, tlc.name as to_location, b.plate_no, rq.start_time "
+    . "from student_queue sq "
+    . "inner join route_queue rq on rq.id = sq.route_queue_id "
+    . "inner join location flc on flc.id = rq.from_location_id "
+    . "inner join location tlc on tlc.id = rq.to_location_id "
+    . "inner join bus b on b.id = rq.bus_id "
+    . "where student_id = " . $_SESSION['user']['id'];
 $data = $db->query($query);
 if ($data) {
-    header(json_encode($data), true, 200);
+    $datas = array();
+    while ($row = $data->fetch_assoc()) {
+        array_push($datas, $row);
+    }
+    header("", true, 200);
+    echo json_encode($datas);
 } else {
     header("", true, 500);
 }
