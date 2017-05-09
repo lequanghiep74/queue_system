@@ -5,7 +5,14 @@ $db = new DB();
 if (isset($_GET['id'])
     && isset($_GET['status'])
 ) {
-    $query = "update route_queue set status = " . $_GET['status'] . " where id = " . $_GET['id'];
+    $query = "";
+    if ($_GET['status'] == 1) {
+        $query = "update route_queue set status = " . $_GET['status'] . " where id = " . $_GET['id'];
+        echo $query;
+    } else {
+        $query = "update route_queue set status = " . $_GET['status'] . ", cancel = cancel + accept, accept = 0 where id = " . $_GET['id'];
+        echo $query;
+    }
     if ($db->query($query)) {
         $query = '';
         if ($_GET['status'] == 1) {

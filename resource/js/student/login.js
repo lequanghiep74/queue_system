@@ -1,7 +1,11 @@
-/**
- * Created by thuan on 3/19/2017.
- */
 $(document).ready(function () {
+    if (window.localStorage.getItem('user') !== null && window.localStorage.getItem('user') !== undefined) {
+        var user = JSON.parse(window.localStorage.getItem('user'));
+        if (user.type === 'student') {
+            window.location.replace("choose-bus.html");
+        }
+    }
+
     $("#submit-btn").click(function () {
         var obj = {
             username: $('#username').val(),

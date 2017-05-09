@@ -26,7 +26,9 @@
     <script src="../bower_components/materialize/dist/js/materialize.js"></script>
 
     <!--Import custom js-->
-    <script src="../resource/js/driver/report.js"></script>
+    <script src="../resource/js/admin/report.js"></script>
+    <script src="../resource/js/general/logout.js"></script>
+    <script src="../resource/js/admin/auth.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,70 +43,62 @@
         <a href="#" class="center brand-logo">REPORT</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="choose-bus.html">Choose Bus</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li><a href="choose-bus.html">Report</a></li>
+            <li class="logout"><a>Logout</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="choose-bus.html">Choose Bus</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li><a href="choose-bus.html">Report</a></li>
+            <li class="logout"><a>Logout</a></li>
         </ul>
     </div>
 </nav>    <!--end nav-->
-<div class="row margin-bottom-0">
-    <h5 class="center">REPORT SYSTEM</h5>
-</div>
 <div class="row" style="overflow-x: auto">
-    <table class="highlight col m6 offset-m3 centered">
-        <thead class="thead-color">
-        <tr>
-            <th>No</th>
-            <th>Visitor</th>
-            <th>Total <br>Money</th>
-            <th>Cancel <br> Times</th>
-            <th>Bus <br>Turn</th>
-        </tr>
-        </thead>
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s10 m6 offset-s1 offset-m3">
+                <input name="report_date" required type="date" class="datepicker" id="report_date"
+                       placeholder="Select date">
+                <label class="teal-text bold" for="report_date">Report date</label>
+            </div>
+            <div class="row" style="text-align: center; margin-top: 15px;">
+                <input value="Show report" type="button" class="btn waves-effect waves-light" name="action"
+                       id="submit-btn">
+                </input>
+            </div>
+        </div>
+    </form>
+    <div id="report" hidden>
+        <form>
+            <div class="row">
+                <div class="col s12">
+                    <label class="bold teal-text">Number of students rejected: </label><span id="numRejected"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <label class="bold teal-text">Number of students accepted: </label><span id="numAccepted"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <label class="bold teal-text">Total Money: </label><span id="totalMoney"></span>
+                </div>
+            </div>
+        </form>
+        <table id="busReport" class="highlight col m6 offset-m3 centered" hidden>
+            <thead class="thead-color">
+            <tr>
+                <th class="teal-text">No</th>
+                <th class="teal-text">Bus no</th>
+                <th class="teal-text">Plate no</th>
+                <th class="teal-text">Number of runs</th>
+            </tr>
+            </thead>
 
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>20</td>
-            <td>565</td>
-            <td>1</td>
-            <td>19</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>40</td>
-            <td>1255</td>
-            <td>12</td>
-            <td>112</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>150</td>
-            <td>123</td>
-            <td>123</td>
-            <td>123</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>250</td>
-            <td>5545</td>
-            <td>45</td>
-            <td>85</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>12</td>
-            <td>62</td>
-            <td>2</td>
-            <td>12</td>
-        </tr>
-        </tbody>
-    </table>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>

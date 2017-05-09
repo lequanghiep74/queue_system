@@ -36,7 +36,7 @@ $(document).ready(function () {
     window.updateStudentQueue = function updateStudentQueue(action) {
         var status = action === 'decline' ? 2 : 1;
         $.ajax({
-            url: "/queue/api/route_queue/updateStudentQueue.php?id=" + student_queue.id + "&status=" + status,
+            url: "/queue/api/route_queue/updateStudentQueue.php?id=" + student_queue.id + "&status=" + status + "&route_queue_id=" + id,
             type: 'get',
             success: function () {
                 getStudentQueueByRouteQueue();

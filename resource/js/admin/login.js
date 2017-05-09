@@ -1,8 +1,8 @@
 $(document).ready(function () {
     if (window.localStorage.getItem('user') !== null && window.localStorage.getItem('user') !== undefined) {
         var user = JSON.parse(window.localStorage.getItem('user'));
-        if (user.type === 'driver') {
-            window.location.replace("choose-bus.html");
+        if (user.type === 'admin') {
+            window.location.replace("report.html");
         }
     }
 
@@ -19,9 +19,9 @@ $(document).ready(function () {
             data: obj,
             success: function (data) {
                 data = JSON.parse(data);
-                data.type = 'driver';
+                data.type = 'admin';
                 window.localStorage.setItem('user', JSON.stringify(data));
-                window.location.replace("choose-bus.html");
+                window.location.replace("report.html");
             },
             error: function (error) {
                 alert(error.responseText);
