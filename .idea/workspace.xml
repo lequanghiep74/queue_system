@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c1934b88-2ff6-42bd-af51-7f2f15ee8bbb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/register.html" afterPath="$PROJECT_DIR$/student/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/login.html" afterPath="$PROJECT_DIR$/driver/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/css/login/login.css" afterPath="$PROJECT_DIR$/resource/css/login/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/login.html" afterPath="$PROJECT_DIR$/student/login.html" />
     </list>
     <ignored path="queue.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,57 +26,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="history.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/js/driver/history.js">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+            <state relative-caret-position="204">
+              <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
               <folding>
-                <marker date="1494338780535" expanded="true" signature="1035:1056" ph="..." />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get-number.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/css/get-number.css">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/driver/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/driver/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="127" column="18" selection-start-line="124" selection-start-column="12" selection-end-line="127" selection-end-column="18" />
+            <state relative-caret-position="51">
+              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
               <folding>
-                <element signature="n#style#0;n#div#9;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/student/register.html">
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resource/css/login/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#div#8;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="materialize.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/materialize/dist/css/materialize.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="6251" column="1" selection-start-line="6251" selection-start-column="1" selection-end-line="6251" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -95,12 +75,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/general/getBus.php" />
         <option value="$PROJECT_DIR$/api/general/createRouteQueue.php" />
         <option value="$PROJECT_DIR$/api/route_queue/actionRouteQueue.php" />
         <option value="$PROJECT_DIR$/api/route/getRoute.php" />
         <option value="$PROJECT_DIR$/driver/js/choose.bus.js" />
-        <option value="$PROJECT_DIR$/driver/login.html" />
         <option value="$PROJECT_DIR$/resource/js/driver/login.js" />
         <option value="$PROJECT_DIR$/api/general/login.php" />
         <option value="$PROJECT_DIR$/resource/js/student/login.js" />
@@ -111,7 +89,6 @@
         <option value="$PROJECT_DIR$/api/include/DB.php" />
         <option value="$PROJECT_DIR$/api/route_queue/createRouteQueue.php" />
         <option value="$PROJECT_DIR$/api/driver/register.php" />
-        <option value="$PROJECT_DIR$/student/login.html" />
         <option value="$PROJECT_DIR$/student/choose-bus.html" />
         <option value="$PROJECT_DIR$/api/route_queue/getBusOfRouteQueue.php" />
         <option value="$PROJECT_DIR$/api/route_queue/getRouteQueue.php" />
@@ -146,6 +123,9 @@
         <option value="$PROJECT_DIR$/driver/register.html" />
         <option value="$PROJECT_DIR$/bower_components/materialize/dist/css/materialize.css" />
         <option value="$PROJECT_DIR$/student/register.html" />
+        <option value="$PROJECT_DIR$/student/login.html" />
+        <option value="$PROJECT_DIR$/driver/login.html" />
+        <option value="$PROJECT_DIR$/resource/css/login/login.css" />
       </list>
     </option>
   </component>
@@ -510,12 +490,12 @@
       <workItem from="1494061695152" duration="7952000" />
       <workItem from="1494160509724" duration="15757000" />
       <workItem from="1494256475287" duration="8382000" />
-      <workItem from="1494318403195" duration="14190000" />
+      <workItem from="1494318403195" duration="14497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48068000" />
+    <option name="totallyTimeSpent" value="48375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -581,7 +561,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/css/login/Main.css" />
     <entry file="file://$PROJECT_DIR$/resource/css/login/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -634,20 +613,6 @@
             <marker date="1494259300125" expanded="true" signature="603:1178" ph="insert into driver... " />
             <marker date="1494259300125" expanded="true" signature="603:1181" ph="insert into driver... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/driver/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1018,11 +983,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/student/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+        <state relative-caret-position="192">
+          <caret line="121" column="10" selection-start-line="121" selection-start-column="10" selection-end-line="121" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#8;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/css/login/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
