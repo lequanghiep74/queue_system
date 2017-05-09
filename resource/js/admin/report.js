@@ -49,14 +49,18 @@ $(document).ready(function () {
                 data = JSON.parse(data);
                 $('#busReport > tbody').html('');
                 var i = 1;
-                data.forEach(function (val) {
-                    console.log(val);
-                    $('#busReport > tbody:last-child').append('<tr>'
-                        + '<td>' + i++ + '</td>'
-                        + '<td>' + val.bus_no + '</td>'
-                        + '<td>' + val.plate_no + '</td>'
-                        + '<td>' + val.count + '</td></tr>');
-                });
+                if (data.length > 0) {
+                    data.forEach(function (val) {
+                        console.log(val);
+                        $('#busReport > tbody:last-child').append('<tr>'
+                            + '<td>' + i++ + '</td>'
+                            + '<td>' + val.bus_no + '</td>'
+                            + '<td>' + val.plate_no + '</td>'
+                            + '<td>' + val.count + '</td></tr>');
+                    });
+                } else {
+                    $('#busReport > tbody:last-child').append('<tr><td colspan="4">Empty data</td></tr>');
+                }
                 $('#busReport').show();
             },
             error: function (error) {
