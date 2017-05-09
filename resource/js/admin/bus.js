@@ -1,27 +1,31 @@
 $(document).ready(function () {
     $(".button-collapse").sideNav();
-    var location = {};
+    var bus = {};
 
     $('#cancel-btn').click(function () {
-        location = {};
-        $('#location').val('');
+        bus = {};
+        $('#busNo').val('');
+        $('#plateNo').val('');
     });
 
     $("#submit-btn").click(function () {
-        var url = location.id ? '/queue/api/location/updateLocation.php' : '/queue/api/location/saveLocation.php';
-        if ($('#location').val() !== '' && $('#location').val() !== null && $('#location').val() !== undefined) {
+        var url = bus.id ? '/queue/api/bus/updateBus.php' : '/queue/api/bus/saveBus.php';
+        if ($('#busNo').val() !== '' && $('#busNo').val() !== null && $('#busNo').val() !== undefined
+            && $('#plateNo').val() !== '' && $('#plateNo').val() !== null && $('#plateNo').val() !== undefined) {
             $.ajax({
                 url: url,
                 type: 'POST',
                 dataType: 'text',
                 data: {
-                    id: location.id,
-                    name: $('#location').val()
+                    id: bus.id,
+                    bus_no: $('#busNo').val(),
+                    plate_no: $('#plateNo').val(),
                 },
                 success: function () {
-                    location = {};
-                    $('#location').val('');
-                    getListLocation();
+                    bus = {};
+                    $('#busNo').val('');
+                    $('#plateNo').val('');
+                    getListBus();
                 },
                 error: function (error) {
                     alert(error.responseText);
@@ -30,16 +34,16 @@ $(document).ready(function () {
         }
     });
 
-    function deleteLocation(id) {
+    function deleteBus(id) {
         $.ajax({
-            url: '/queue/api/location/deleteLocation.php',
+            url: '/queue/api/bus/deleteBus.php',
             type: 'POST',
             dataType: 'text',
             data: {
                 id: id
             },
             success: function () {
-                getListLocation();
+                getListBus();
             },
             error: function (error) {
                 alert(error.responseText);
@@ -47,33 +51,35 @@ $(document).ready(function () {
         });
     }
 
-    function getListLocation() {
+    function getListBus() {
         $.ajax({
-            url: "/queue/api/location/getLocation.php",
+            url: "/queue/api/bus/getBus.php",
             success: function (data) {
                 data = JSON.parse(data);
-                $('#tableLocation > tbody').html('');
+                $('#tableBus > tbody').html('');
                 var i = 1;
                 if (data.length > 0) {
                     data.forEach(function (val) {
                         var button = '<a class="edit" data=\'' + JSON.stringify(val) + '\' style="margin-right: 10px"><i class="fa fa-pencil" aria-hidden="true"></i></a>'
                             + '<a class="delete" data-id="' + val.id + '"><i class="fa fa-trash" aria-hidden="true"></i></a>';
-                        $('#tableLocation > tbody:last-child').append('<tr>'
+                        $('#tableBus > tbody:last-child').append('<tr>'
                             + '<td>' + i++ + '</td>'
-                            + '<td>' + val.name + '</td>'
+                            + '<td>' + val.bus_no + '</td>'
+                            + '<td>' + val.plate_no + '</td>'
                             + '<td>' + button + '</td></tr>');
                     });
                     $('.edit').click(function () {
                         var data = JSON.parse($(this).attr('data'));
-                        location.id = data.id;
-                        $('#location').val(data.name);
+                        bus.id = data.id;
+                        $('#busNo').val(data.bus_no);
+                        $('#plateNo').val(data.plate_no);
                     });
 
                     $('.delete').click(function () {
-                        deleteLocation($(this).attr('data-id'));
+                        deleteBus($(this).attr('data-id'));
                     });
                 } else {
-                    $('#tableLocation > tbody:last-child').append('<tr><td colspan="3">Empty data</td></tr>');
+                    $('#tableBus > tbody:last-child').append('<tr><td colspan="4">Empty data</td></tr>');
                 }
             },
             error: function (error) {
@@ -82,5 +88,5 @@ $(document).ready(function () {
         });
     }
 
-    getListLocation();
+    getListBus();
 });

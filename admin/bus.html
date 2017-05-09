@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import font google-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!--Import font-awesome-->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
+
+    <!--Import jQuery js-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+
+    <!--Import materialize-->
+    <link rel="stylesheet" href="../bower_components/materialize/dist/css/materialize.css">
+
+    <!--Import style.css-->
+    <link rel="stylesheet" href="../resource/css/report.css">
+
+
+    <!--Import materialize js-->
+    <script src="../bower_components/materialize/dist/js/materialize.js"></script>
+
+    <!--Import custom js-->
+    <script src="../resource/js/admin/bus.js"></script>
+    <script src="../resource/js/general/logout.js"></script>
+    <script src="../resource/js/admin/auth.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav id="nav-color">
+    <div class="nav-wrapper">
+        <a href="#" class="center brand-logo">BUS</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="report.html">Report</a></li>
+            <li><a href="location.html">Location Management</a></li>
+            <li><a href="bus.html">Bus Management</a></li>
+            <li class="logout"><a>Logout</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="report.html">Report</a></li>
+            <li><a href="location.html">Location Management</a></li>
+            <li><a href="bus.html">Bus Management</a></li>
+            <li class="logout"><a>Logout</a></li>
+        </ul>
+    </div>
+</nav>    <!--end nav-->
+<div class="row" style="overflow-x: auto">
+    <form class="col s12" style="margin-top: 15px">
+        <div class="row" style="margin-bottom: 0px">
+            <div class="input-field col s10 m6 offset-s1 offset-m3">
+                <input name="busNo" required placeholder="Enter bus no" id="busNo" type="text"
+                       class="validate">
+                <label class="teal-text bold" for="busNo">Bus No</label>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 0px">
+            <div class="input-field col s10 m6 offset-s1 offset-m3">
+                <input name="plateNo" required placeholder="Enter plate no" id="plateNo" type="text"
+                       class="validate">
+                <label class="teal-text bold" for="plateNo">Plate No</label>
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <input value="Save" type="button" class="btn waves-effect waves-light" name="action"
+                   id="submit-btn">
+            </input>
+            <input value="Cancel" type="button" class="btn waves-effect grey waves-light" name="action"
+                   id="cancel-btn">
+            </input>
+        </div>
+    </form>
+    <table id="tableBus" class="highlight col m6 offset-m3 centered">
+        <thead class="thead-color">
+        <tr>
+            <th class="teal-text">No</th>
+            <th class="teal-text">Bus No</th>
+            <th class="teal-text">Plate No</th>
+            <th class="teal-text">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
