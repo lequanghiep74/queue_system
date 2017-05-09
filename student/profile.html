@@ -25,7 +25,7 @@
     <script src="../bower_components/materialize/dist/js/materialize.js"></script>
 
     <!--Import custom js-->
-    <script src="../resource/js/profile.js"></script>
+    <script src="../resource/js/student/profile.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,7 +71,7 @@
             </div> <!--end link-->
             <form action="#">
                 <!--content-->
-                <div class="card-content grey lighten-4">
+                <div class="card-content">
 
                     <div id="general">
                         <span class="teal-text"><b>User name</b></span>
@@ -96,7 +96,6 @@
                     </div><!--end content-->
 
                     <div id="password">
-                        <h5 class="center teal-text"><b>CHANGE PASSWORD</b></h5>
                         <span class="teal-text"><b>Password current</b></span>
                         <input placeholder="Enter password current" id="password_current" type="password"
                                class="validate"
@@ -112,20 +111,12 @@
                 </div><!--end link-->
 
                 <!--save or cancel-->
-                <div class="card-action">
-                    <div class="row">
-                        <button class="btn waves-effect waves-light col s6 m6 no-border-radius" type="submit"
-                                name="action"
-                                id="submit-btn">
-                            Submit
-                        </button>
-
-                        <button class="btn waves-effect waves-light col s6 m6 no-border-radius red lighten-1" type="submit"
-                                name="action"
-                                id="cancel-btn">
-                            Cancel
-                        </button>
-                    </div>
+                <div class="card-action" style="text-align: center; border-top:none; padding-bottom: 10px;">
+                    <button class="btn waves-effect waves-light no-border-radius" type="submit"
+                            name="action"
+                            id="submit-btn">
+                        Update
+                    </button>
                 </div> <!--save or cancel-->
             </form>
         </div>

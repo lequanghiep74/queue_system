@@ -36,11 +36,11 @@
 }
 
 .materialize-red.lighten-2 {
-  background-color: #ee6e73 !important;
+  background-color: #EF5350 !important;
 }
 
 .materialize-red-text.text-lighten-2 {
-  color: #ee6e73 !important;
+  color: #EF5350 !important;
 }
 
 .materialize-red.lighten-1 {
@@ -984,7 +984,11 @@
 }
 
 .teal-text {
-  color: #009688 !important;
+  color: #EF5350 !important;
+}
+
+.teal-text-history {
+  color: #039be5 !important;
 }
 
 .teal.lighten-5 {
@@ -2621,7 +2625,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #ee6e73;
+  border-left: 5px solid #EF5350;
 }
 
 i {
@@ -2681,7 +2685,7 @@ video.responsive-video {
 }
 
 .pagination li.active {
-  background-color: #ee6e73;
+  background-color: #EF5350;
 }
 
 .pagination li.disabled a {
@@ -2867,7 +2871,7 @@ ul.staggered-list li {
 
 footer.page-footer {
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #EF5350;
 }
 
 footer.page-footer .footer-copyright {
@@ -4004,7 +4008,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #EF5350;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4845,7 +4849,7 @@ small {
 
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #ee6e73;
+  color: #EF5350;
 }
 
 .tabs .tab.disabled a,
@@ -4986,7 +4990,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #EF5350;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -6922,13 +6926,13 @@ input[type=range]:focus::-ms-fill-upper {
 .table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 19px;
-  border-left: 1px solid #ee6e73;
+  border-left: 1px solid #EF5350;
 }
 
 .table-of-contents a.active {
   font-weight: 500;
   padding-left: 18px;
-  border-left: 2px solid #ee6e73;
+  border-left: 2px solid #EF5350;
 }
 
 .side-nav {
@@ -7126,7 +7130,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav .collapsible-body > ul:not(.collapsible) > li.active,
 .side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #ee6e73;
+  background-color: #EF5350;
 }
 
 .side-nav .collapsible-body > ul:not(.collapsible) > li.active a,
