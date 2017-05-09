@@ -7,8 +7,13 @@ if (isset($_GET['id'])
 ) {
     $query = "update route_queue set status = " . $_GET['status'] . " where id = " . $_GET['id'];
     if ($db->query($query)) {
-        $query = "update student_queue set status = 2 where route_queue_id = " . $_GET['id'] . " "
-            . "and status = 0";
+        $query = '';
+        if ($_GET['status'] == 1) {
+            $query = "update student_queue set status = 2 where route_queue_id = " . $_GET['id'] . " "
+                . "and status = 0";
+        } else {
+            $query = "update student_queue set status = 2 where route_queue_id = " . $_GET['id'];
+        }
         if ($db->query($query)) {
             header(' ', true, 200);
         } else {

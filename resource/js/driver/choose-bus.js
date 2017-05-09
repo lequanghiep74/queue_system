@@ -68,7 +68,7 @@ $(document).ready(function () {
             data: obj,
             success: function (data) {
                 data = JSON.parse(data);
-                localStorage.setItem("route_queue_id", data.id);
+                window.localStorage.setItem("queue_id", data.id);
                 window.location.href = 'queue.html';
             },
             error: function (error) {

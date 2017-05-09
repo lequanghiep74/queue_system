@@ -1,6 +1,3 @@
-/**
- * Created by thuan on 3/18/2017.
- */
 $(document).ready(function () {
     $(".button-collapse").sideNav();
     var id = window.localStorage.getItem('queue_id');
@@ -56,8 +53,14 @@ $(document).ready(function () {
             type: 'get',
             success: function (data) {
                 student_queue = JSON.parse(data)[0];
-                $('#studentName').html('<b>Name</b> ' + student_queue.fullname);
-                setData(student_queue.queue);
+                if (student_queue !== undefined) {
+                    $('#studentName').html('<b>Name</b> ' + student_queue.fullname);
+                    setData(student_queue.queue);
+                } else {
+                    $('#btn-accept').prop('disabled', true);
+                    $('#btn-decline').prop('disabled', true);
+                    setData('0');
+                }
             },
             error: function (error) {
                 alert(error.responseText);
