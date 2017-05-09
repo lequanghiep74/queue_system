@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Report</title>
+    <title>Location</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Import font google-->
@@ -26,7 +26,7 @@
     <script src="../bower_components/materialize/dist/js/materialize.js"></script>
 
     <!--Import custom js-->
-    <script src="../resource/js/admin/report.js"></script>
+    <script src="../resource/js/admin/location.js"></script>
     <script src="../resource/js/general/logout.js"></script>
     <script src="../resource/js/admin/auth.js"></script>
 
@@ -40,7 +40,7 @@
 <body>
 <nav id="nav-color">
     <div class="nav-wrapper">
-        <a href="#" class="center brand-logo">REPORT</a>
+        <a href="#" class="center brand-logo">LOCATION</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="report.html">Report</a></li>
@@ -57,52 +57,34 @@
     </div>
 </nav>    <!--end nav-->
 <div class="row" style="overflow-x: auto">
-    <form class="col s12">
-        <div class="row">
+    <form class="col s12" style="margin-top: 15px">
+        <div class="row" style="margin-bottom: 0px">
             <div class="input-field col s10 m6 offset-s1 offset-m3">
-                <input name="report_date" required type="date" class="datepicker" id="report_date"
-                       placeholder="Select date">
-                <label class="teal-text bold" for="report_date">Report date</label>
-            </div>
-            <div class="row" style="text-align: center; margin-top: 15px;">
-                <input value="Show report" type="button" class="btn waves-effect waves-light" name="action"
-                       id="submit-btn">
-                </input>
+                <input name="location" required placeholder="Enter location" id="location" type="text"
+                       class="validate">
+                <label class="teal-text bold" for="location">Location</label>
             </div>
         </div>
+        <div class="row" style="text-align: center;">
+            <input value="Save" type="button" class="btn waves-effect waves-light" name="action"
+                   id="submit-btn">
+            </input>
+            <input value="Cancel" type="button" class="btn waves-effect grey waves-light" name="action"
+                   id="cancel-btn">
+            </input>
+        </div>
     </form>
-    <div id="report" hidden>
-        <form>
-            <div class="row">
-                <div class="col s12">
-                    <label class="bold teal-text">Number of students rejected: </label><span id="numRejected"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <label class="bold teal-text">Number of students accepted: </label><span id="numAccepted"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <label class="bold teal-text">Total Money: </label><span id="totalMoney"></span>
-                </div>
-            </div>
-        </form>
-        <table id="busReport" class="highlight col m6 offset-m3 centered" hidden>
-            <thead class="thead-color">
-            <tr>
-                <th class="teal-text">No</th>
-                <th class="teal-text">Bus no</th>
-                <th class="teal-text">Plate no</th>
-                <th class="teal-text">Number of runs</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            </tbody>
-        </table>
-    </div>
+    <table id="tableLocation" class="highlight col m6 offset-m3 centered">
+        <thead class="thead-color">
+        <tr>
+            <th class="teal-text">No</th>
+            <th class="teal-text">Location</th>
+            <th class="teal-text">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 </div>
 </body>
 </html>

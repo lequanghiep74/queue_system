@@ -51,7 +51,6 @@ $(document).ready(function () {
                 var i = 1;
                 if (data.length > 0) {
                     data.forEach(function (val) {
-                        console.log(val);
                         $('#busReport > tbody:last-child').append('<tr>'
                             + '<td>' + i++ + '</td>'
                             + '<td>' + val.bus_no + '</td>'
