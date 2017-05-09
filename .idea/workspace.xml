@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1934b88-2ff6-42bd-af51-7f2f15ee8bbb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/route_queue/getStudentQueueByRouteQueueId.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/route_queue/updateStudentQueue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/driver/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/driver/profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/student/profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student/profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/route_queue/getRouteQueueById.php" afterPath="$PROJECT_DIR$/api/route_queue/getRouteQueueById.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/report.html" afterPath="$PROJECT_DIR$/admin/report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/choose-bus.html" afterPath="$PROJECT_DIR$/driver/choose-bus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/history.html" afterPath="$PROJECT_DIR$/driver/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/profile.html" afterPath="$PROJECT_DIR$/driver/profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/queue.html" afterPath="$PROJECT_DIR$/driver/queue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/driver/get-number.js" afterPath="$PROJECT_DIR$/resource/js/driver/get-number.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/driver/history.js" afterPath="$PROJECT_DIR$/resource/js/driver/history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/student/get-number.js" afterPath="$PROJECT_DIR$/resource/js/student/get-number.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/student/history.js" afterPath="$PROJECT_DIR$/resource/js/student/history.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/choose-bus.html" afterPath="$PROJECT_DIR$/student/choose-bus.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/get-number.html" afterPath="$PROJECT_DIR$/student/get-number.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/history.html" afterPath="$PROJECT_DIR$/student/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/profile.html" afterPath="$PROJECT_DIR$/student/profile.html" />
     </list>
     <ignored path="queue.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="history.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resource/js/student/history.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="816">
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
               <folding>
                 <marker date="1494337280072" expanded="true" signature="819:840" ph="..." />
               </folding>
@@ -75,9 +71,31 @@
       <file leaf-file-name="history.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student/history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="82" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="82" />
+            <state relative-caret-position="174">
+              <caret line="42" column="61" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="61" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/report.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="choose-bus.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/driver/choose-bus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="55" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +132,6 @@
         <option value="$PROJECT_DIR$/api/general/getLocations.php" />
         <option value="$PROJECT_DIR$/api/general/getBusStations.php" />
         <option value="$PROJECT_DIR$/api/general/getBuses.php" />
-        <option value="$PROJECT_DIR$/driver/choose-bus.html" />
         <option value="$PROJECT_DIR$/api/include/DB.php" />
         <option value="$PROJECT_DIR$/api/route_queue/createRouteQueue.php" />
         <option value="$PROJECT_DIR$/api/driver/register.php" />
@@ -140,6 +157,8 @@
         <option value="$PROJECT_DIR$/driver/queue.html" />
         <option value="$PROJECT_DIR$/resource/js/driver/history.js" />
         <option value="$PROJECT_DIR$/resource/js/student/history.js" />
+        <option value="$PROJECT_DIR$/driver/choose-bus.html" />
+        <option value="$PROJECT_DIR$/admin/report.html" />
       </list>
     </option>
   </component>
@@ -481,22 +500,23 @@
       <workItem from="1494061695152" duration="7952000" />
       <workItem from="1494160509724" duration="15757000" />
       <workItem from="1494256475287" duration="8382000" />
-      <workItem from="1494318403195" duration="11469000" />
+      <workItem from="1494318403195" duration="11687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45347000" />
+    <option name="totallyTimeSpent" value="45565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14145234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -508,7 +528,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -552,13 +571,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/student/choose-bus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/general/getBusCoachStation.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -661,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/driver/choose-bus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="35" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/general/getBuses.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -682,6 +687,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="109" column="43" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -922,14 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="82" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/driver/queue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -952,11 +952,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resource/js/student/history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state relative-caret-position="816">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
           <folding>
             <marker date="1494337280072" expanded="true" signature="819:840" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/choose-bus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="42" column="61" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
