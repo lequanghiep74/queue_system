@@ -7,7 +7,8 @@ $query = "select rq.id, flc.name as from_location, tlc.name as to_location, b.pl
     . "left join bus b on b.id = rq.bus_id "
     . "left join location flc on flc.id = rq.from_location_id "
     . "left join location tlc on tlc.id = rq.to_location_id "
-    . "where driver_id = " . $_SESSION['user']['id'];
+    . "where driver_id = " . $_SESSION['user']['id'] . " "
+    . "order by id desc";
 $data = $db->query($query);
 if ($data) {
     $datas = array();

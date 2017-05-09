@@ -21,8 +21,23 @@ $(document).ready(function () {
         }
     });
 
-    window.updateStudentQueue = function updateStudentQueue(action) {
+    window.updateQueue = function updateQueue(action) {
         var status = action === 'cancel' ? 2 : 1;
+        $.ajax({
+            url: "/queue/api/route_queue/updateQueue.php?id=" + id + "&status=" + status,
+            type: 'get',
+            success: function () {
+                window.localStorage.setItem('queue_id', null);
+                window.location.href = 'history.html';
+            },
+            error: function (error) {
+                alert(error.responseText);
+            }
+        });
+    };
+
+    window.updateStudentQueue = function updateStudentQueue(action) {
+        var status = action === 'decline' ? 2 : 1;
         $.ajax({
             url: "/queue/api/route_queue/updateStudentQueue.php?id=" + student_queue.id + "&status=" + status,
             type: 'get',

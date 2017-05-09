@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1934b88-2ff6-42bd-af51-7f2f15ee8bbb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/driver/auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/general/logout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/student/auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/route_queue/updateQueue.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/general/login.php" afterPath="$PROJECT_DIR$/api/general/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/choose-bus.html" afterPath="$PROJECT_DIR$/driver/choose-bus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/history.html" afterPath="$PROJECT_DIR$/driver/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/profile.html" afterPath="$PROJECT_DIR$/driver/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/driver/history.php" afterPath="$PROJECT_DIR$/api/driver/history.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/student/history.php" afterPath="$PROJECT_DIR$/api/student/history.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/queue.html" afterPath="$PROJECT_DIR$/driver/queue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/driver/login.js" afterPath="$PROJECT_DIR$/resource/js/driver/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/student/login.js" afterPath="$PROJECT_DIR$/resource/js/student/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/choose-bus.html" afterPath="$PROJECT_DIR$/student/choose-bus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/get-number.html" afterPath="$PROJECT_DIR$/student/get-number.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/history.html" afterPath="$PROJECT_DIR$/student/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/profile.html" afterPath="$PROJECT_DIR$/student/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/css/get-number.css" afterPath="$PROJECT_DIR$/resource/css/get-number.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/driver/get-number.js" afterPath="$PROJECT_DIR$/resource/js/driver/get-number.js" />
     </list>
     <ignored path="queue.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +28,68 @@
     <favorites_list name="queue" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="history.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/driver/history.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <marker date="1494349945374" expanded="true" signature="78:504" ph="select rq.id... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queue.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/driver/queue.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="405" column="10" selection-start-line="405" selection-start-column="10" selection-end-line="405" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#a#1;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#3;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/student/history.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get-number.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/js/driver/get-number.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateQueue.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/route_queue/updateQueue.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding>
+                <marker date="1494349638087" expanded="true" signature="139:206" ph="update route... " />
+                <marker date="1494349638087" expanded="true" signature="271:330" ph="update stude... " />
+                <marker date="1494349638087" expanded="true" signature="271:381" ph="update stude... " />
+                <marker date="1494349638087" expanded="true" signature="271:382" ph="update stude... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/general/getLocations.php" />
         <option value="$PROJECT_DIR$/api/general/getBusStations.php" />
         <option value="$PROJECT_DIR$/api/general/getBuses.php" />
         <option value="$PROJECT_DIR$/api/route_queue/createRouteQueue.php" />
@@ -63,11 +115,8 @@
         <option value="$PROJECT_DIR$/resource/js/driver/register.js" />
         <option value="$PROJECT_DIR$/resource/js/student/choose-bus.js" />
         <option value="$PROJECT_DIR$/api/route_queue/enterRouteQueue.php" />
-        <option value="$PROJECT_DIR$/api/student/history.php" />
-        <option value="$PROJECT_DIR$/api/driver/history.php" />
         <option value="$PROJECT_DIR$/resource/js/student/get-number.js" />
         <option value="$PROJECT_DIR$/api/route_queue/getRouteQueueById.php" />
-        <option value="$PROJECT_DIR$/resource/js/driver/get-number.js" />
         <option value="$PROJECT_DIR$/api/route_queue/updateStudentQueue.php" />
         <option value="$PROJECT_DIR$/api/route_queue/getStudentQueueByRouteQueueId.php" />
         <option value="$PROJECT_DIR$/admin/report.html" />
@@ -78,7 +127,6 @@
         <option value="$PROJECT_DIR$/resource/js/student/history.js" />
         <option value="$PROJECT_DIR$/resource/js/driver/history.js" />
         <option value="$PROJECT_DIR$/resource/css/register.css" />
-        <option value="$PROJECT_DIR$/resource/css/get-number.css" />
         <option value="$PROJECT_DIR$/driver/register.html" />
         <option value="$PROJECT_DIR$/bower_components/materialize/dist/css/materialize.css" />
         <option value="$PROJECT_DIR$/student/register.html" />
@@ -95,13 +143,18 @@
         <option value="$PROJECT_DIR$/student/get-number.html" />
         <option value="$PROJECT_DIR$/student/history.html" />
         <option value="$PROJECT_DIR$/student/profile.html" />
-        <option value="$PROJECT_DIR$/driver/queue.html" />
         <option value="$PROJECT_DIR$/driver/profile.html" />
         <option value="$PROJECT_DIR$/driver/history.html" />
         <option value="$PROJECT_DIR$/driver/choose-bus.html" />
         <option value="$PROJECT_DIR$/resource/js/student/auth.js" />
         <option value="$PROJECT_DIR$/resource/js/student/login.js" />
         <option value="$PROJECT_DIR$/resource/js/driver/login.js" />
+        <option value="$PROJECT_DIR$/resource/css/get-number.css" />
+        <option value="$PROJECT_DIR$/driver/queue.html" />
+        <option value="$PROJECT_DIR$/api/route_queue/updateQueue.php" />
+        <option value="$PROJECT_DIR$/resource/js/driver/get-number.js" />
+        <option value="$PROJECT_DIR$/api/driver/history.php" />
+        <option value="$PROJECT_DIR$/api/student/history.php" />
       </list>
     </option>
   </component>
@@ -384,11 +437,11 @@
       <recent name="C:\xampp\htdocs\queue\api\route" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\queue\api\route_queue" />
       <recent name="C:\xampp\htdocs\queue\resource\js\student" />
       <recent name="C:\xampp\htdocs\queue\resource\css" />
       <recent name="C:\xampp\htdocs\queue\resource\js\driver" />
       <recent name="C:\xampp\htdocs\queue\student" />
-      <recent name="C:\xampp\htdocs\queue\driver" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.Unnamed">
@@ -467,16 +520,16 @@
       <workItem from="1494061695152" duration="7952000" />
       <workItem from="1494160509724" duration="15757000" />
       <workItem from="1494256475287" duration="8382000" />
-      <workItem from="1494318403195" duration="16892000" />
+      <workItem from="1494318403195" duration="18355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50770000" />
+    <option name="totallyTimeSpent" value="52233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -538,13 +591,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/js/student/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/js/driver/register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -602,24 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/student/history.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/driver/history.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <marker date="1494320943613" expanded="true" signature="78:473" ph="select rq.id... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/js/driver/choose-bus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -650,14 +678,6 @@
             <marker date="1494334129418" expanded="true" signature="109:441" ph="select rq.id... route_queue" />
             <marker date="1494334129418" expanded="true" signature="109:488" ph="select rq.id... route_queue" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/js/driver/get-number.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,14 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/css/get-number.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -936,16 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/driver/queue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/driver/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -992,6 +994,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/route_queue/updateQueue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <marker date="1494349638087" expanded="true" signature="139:206" ph="update route... " />
+            <marker date="1494349638087" expanded="true" signature="271:330" ph="update stude... " />
+            <marker date="1494349638087" expanded="true" signature="271:381" ph="update stude... " />
+            <marker date="1494349638087" expanded="true" signature="271:382" ph="update stude... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/queue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="405" column="10" selection-start-line="405" selection-start-column="10" selection-end-line="405" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#3;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/css/get-number.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="470" column="6" selection-start-line="470" selection-start-column="6" selection-end-line="470" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/driver/get-number.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/driver/history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <marker date="1494349945374" expanded="true" signature="78:504" ph="select rq.id... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/student/history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>

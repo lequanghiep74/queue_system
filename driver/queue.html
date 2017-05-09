@@ -400,9 +400,14 @@
         </div>
     </div>
     <div class="row"></div>
-    <div class="row" id="margin-top">
-        <a onclick="updateStudentQueue('accept')" class="waves-effect waves-light btn-large col s4 m2 offset-s2 offset-m3">ACCPECT</a>
-        <a style="margin-left: 10px;" onclick="updateStudentQueue('cancel')" class="waves-effect waves-light btn-large col s4 m2 grey darken-1">CANCEL</a>
+    <div class="row">
+        <a onclick="updateStudentQueue('accept')" class="waves-effect waves-light btn col s4 m2 blue darken-1 offset-s2 offset-m3">ACCPECT</a>
+        <a style="margin-left: 10px;" onclick="updateStudentQueue('decline')" class="waves-effect red waves-light btn col s4 m2">Decline</a>
+    </div>
+
+    <div class="row">
+        <a onclick="updateQueue('run')" class="green lighten-1 waves-effect waves-light btn col s4 m2 offset-s2 offset-m3">Run</a>
+        <a onclick="updateQueue('cancel')" style="margin-left: 10px;" onclick="updateStudentQueue('cancel')" class="waves-effect waves-light btn col s4 m2 grey darken-1">CANCEL</a>
     </div>
 
     <div class="row">
