@@ -29,7 +29,6 @@ $(document).ready(function () {
         });
     });
 
-    // begin js
     function setNum() {
         var num = '0000';
         var queue = (parseInt(route_queue.queue) + 1).toString();

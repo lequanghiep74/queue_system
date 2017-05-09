@@ -110,6 +110,38 @@
                                 <div class='digit'>5</div>
                             </div>
                         </div>
+                        <div class='number' id='minutes-dizaines-6'>
+                            <div class='up'>
+                                <div class='digit'>6</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>6</div>
+                            </div>
+                        </div>
+                        <div class='number' id='minutes-dizaines-7'>
+                            <div class='up'>
+                                <div class='digit'>7</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>7</div>
+                            </div>
+                        </div>
+                        <div class='number' id='minutes-dizaines-8'>
+                            <div class='up'>
+                                <div class='digit'>8</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>8</div>
+                            </div>
+                        </div>
+                        <div class='number' id='minutes-dizaines-9'>
+                            <div class='up'>
+                                <div class='digit'>9</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>9</div>
+                            </div>
+                        </div>
                     </div>
                     <div class='unites'>
                         <div class='number' id='minutes-unites-0'>
@@ -212,6 +244,70 @@
                                 <div class='digit'>1</div>
                             </div>
                         </div>
+                        <div class='number' id='hours-dizaines-2'>
+                            <div class='up'>
+                                <div class='digit'>2</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>2</div>
+                            </div>
+                        </div>
+                        <div class='number' id='hours-dizaines-3'>
+                            <div class='up'>
+                                <div class='digit'>3</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>3</div>
+                            </div>
+                        </div>
+                        <div class='number' id='hours-dizaines-4'>
+                            <div class='up'>
+                                <div class='digit'>4</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>4</div>
+                            </div>
+                        </div>
+                        <div class='number' id='hours-dizaines-5'>
+                            <div class='up'>
+                                <div class='digit'>5</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>5</div>
+                            </div>
+                        </div>
+                        <div class='number' id='hours-dizaines-6'>
+                            <div class='up'>
+                                <div class='digit'>6</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>6</div>
+                            </div>
+                        </div>
+                        <div class='number' id='hours-dizaines-7'>
+                            <div class='up'>
+                                <div class='digit'>7</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>7</div>
+                            </div>
+                        </div>
+                        <div class='number' id='hours-dizaines-8'>
+                            <div class='up'>
+                                <div class='digit'>8</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>8</div>
+                            </div>
+                        </div>
+                        <div class='number' id='hours-dizaines-9'>
+                            <div class='up'>
+                                <div class='digit'>9</div>
+                            </div>
+                            <div class='down'>
+                                <div class='digit'>9</div>
+                            </div>
+                        </div>
                     </div>
                     <div class='unites'>
                         <div class='number' id='hours-unites-0'>
@@ -301,10 +397,9 @@
     </div>
     <div class="row"></div>
     <div class="row" id="margin-top">
-        <a class="waves-effect waves-light btn-large col s4 m2 offset-s2 offset-m3">ACCPECT</a>
-        <a class="waves-effect waves-light btn-large col s4 m2 offset-s1 offset-m1 red lighten-1">CANCEL</a>
+        <a onclick="updateStudentQueue('accept')" class="waves-effect waves-light btn-large col s4 m2 offset-s2 offset-m3">ACCPECT</a>
+        <a style="margin-left: 10px;" onclick="updateStudentQueue('cancel')" class="waves-effect waves-light btn-large col s4 m2 red lighten-1">CANCEL</a>
     </div>
-
 
     <div class="row">
         <div class="col s12 m6 offset-m3 position-bottom ">
@@ -313,18 +408,21 @@
                     <div class="row">
                         <span class="teal-text col s12 m12">
                             <i class="material-icons">face</i>
-                            <i class="small"><b>Name</b> Nguyen Tat Thanh</i>
+                            <i id="studentName" class="small"></i>
                         </span>
                         <span class="teal-text col s12 m12">
                             <i class="material-icons s1">location_on</i>
-                            <i class="small"><b>From </b>Ha Noi </i>
-                            <i class="small"><b>To</b> Ho Chi Minh</i>
+                            <i id="fromLocation" class="small"></i>
+                            <i id="toLocation" class="small"></i>
                         </span><br>
                         <span class="teal-text col s12 m12">
                             <i class="material-icons s1">watch_later</i>
-                            <i class="small"><b>Time</b> 20:30</i>
+                            <i id="startTime" class="small"></i>
                         </span><br>
-
+                        <span class="teal-text col s12 m12">
+                            <i class="material-icons s1">directions_bus</i>
+                            <i id="bus" class="small"></i>
+                        </span>
                     </div>
                 </div>
             </div>

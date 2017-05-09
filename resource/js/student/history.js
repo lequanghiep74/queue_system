@@ -48,10 +48,12 @@ $(document).ready(function () {
                     + data.queue + '</a>';
                 break;
             case '1':
-                html += '<a class="btn-floating waves-effect waves-light red lighten-1 center-element center-align">Close</a>';
+                html += '<a class="btn-floating waves-effect waves-light teal lighten-1 center-element center-align">'
+                    + '<i class="fa fa-check" aria-hidden="true"></i></a>';
                 break;
             case '2':
-                html += '<a class="btn-floating waves-effect waves-light teal lighten-1 center-element center-align">Done</a>';
+                html += '<a class="btn-floating waves-effect waves-light red lighten-1 center-element center-align">'
+                    + '<i class="fa fa-times" aria-hidden="true"></i></a>';
                 break;
         }
         html += ' </div></div></div></div>';

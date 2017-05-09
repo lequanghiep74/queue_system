@@ -4,11 +4,12 @@ $db = new DB();
 session_start();
 if (isset($_GET['id'])
 ) {
-    $query = "select rq.id, flc.name as from_location, tlc.name as to_location, b.plate_no, rq.start_time, rq.queue from route_queue rq "
-        . "left join bus b on b.id = rq.bus_id "
-        . "left join location flc on flc.id = rq.from_location_id "
-        . "left join location tlc on tlc.id = rq.to_location_id "
-        . "where rq.id = " . $_GET['id'];
+    $query = "select student_queue.id, queue, student.fullname from student_queue "
+        . "left join student on student.id = student_queue.student_id "
+        . "where route_queue_id = " . $_GET['id'] . " "
+        . "and status = 0 "
+        . "order by queue "
+        . "limit 1";
     $data = $db->query($query);
     if ($data) {
         $datas = array();
