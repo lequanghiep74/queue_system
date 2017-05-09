@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1934b88-2ff6-42bd-af51-7f2f15ee8bbb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/driver/auth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/general/logout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/js/student/auth.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/general/login.php" afterPath="$PROJECT_DIR$/api/general/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/choose-bus.html" afterPath="$PROJECT_DIR$/driver/choose-bus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/history.html" afterPath="$PROJECT_DIR$/driver/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/profile.html" afterPath="$PROJECT_DIR$/driver/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver/queue.html" afterPath="$PROJECT_DIR$/driver/queue.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/driver/login.js" afterPath="$PROJECT_DIR$/resource/js/driver/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/js/student/login.js" afterPath="$PROJECT_DIR$/resource/js/student/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/choose-bus.html" afterPath="$PROJECT_DIR$/student/choose-bus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/get-number.html" afterPath="$PROJECT_DIR$/student/get-number.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/history.html" afterPath="$PROJECT_DIR$/student/history.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/profile.html" afterPath="$PROJECT_DIR$/student/profile.html" />
     </list>
     <ignored path="queue.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,42 +36,7 @@
     <favorites_list name="queue" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/driver/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resource/css/login/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,21 +51,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/general/createRouteQueue.php" />
-        <option value="$PROJECT_DIR$/api/route_queue/actionRouteQueue.php" />
-        <option value="$PROJECT_DIR$/api/route/getRoute.php" />
-        <option value="$PROJECT_DIR$/driver/js/choose.bus.js" />
-        <option value="$PROJECT_DIR$/resource/js/driver/login.js" />
-        <option value="$PROJECT_DIR$/api/general/login.php" />
-        <option value="$PROJECT_DIR$/resource/js/student/login.js" />
-        <option value="$PROJECT_DIR$/api/student/register.php" />
         <option value="$PROJECT_DIR$/api/general/getLocations.php" />
         <option value="$PROJECT_DIR$/api/general/getBusStations.php" />
         <option value="$PROJECT_DIR$/api/general/getBuses.php" />
-        <option value="$PROJECT_DIR$/api/include/DB.php" />
         <option value="$PROJECT_DIR$/api/route_queue/createRouteQueue.php" />
         <option value="$PROJECT_DIR$/api/driver/register.php" />
-        <option value="$PROJECT_DIR$/student/choose-bus.html" />
         <option value="$PROJECT_DIR$/api/route_queue/getBusOfRouteQueue.php" />
         <option value="$PROJECT_DIR$/api/route_queue/getRouteQueue.php" />
         <option value="$PROJECT_DIR$/resource/js/driver/choose-bus.js" />
@@ -94,25 +63,18 @@
         <option value="$PROJECT_DIR$/resource/js/driver/register.js" />
         <option value="$PROJECT_DIR$/resource/js/student/choose-bus.js" />
         <option value="$PROJECT_DIR$/api/route_queue/enterRouteQueue.php" />
-        <option value="$PROJECT_DIR$/student/history.html" />
-        <option value="$PROJECT_DIR$/driver/history.html" />
         <option value="$PROJECT_DIR$/api/student/history.php" />
         <option value="$PROJECT_DIR$/api/driver/history.php" />
         <option value="$PROJECT_DIR$/resource/js/student/get-number.js" />
-        <option value="$PROJECT_DIR$/student/get-number.html" />
         <option value="$PROJECT_DIR$/api/route_queue/getRouteQueueById.php" />
         <option value="$PROJECT_DIR$/resource/js/driver/get-number.js" />
         <option value="$PROJECT_DIR$/api/route_queue/updateStudentQueue.php" />
         <option value="$PROJECT_DIR$/api/route_queue/getStudentQueueByRouteQueueId.php" />
-        <option value="$PROJECT_DIR$/driver/choose-bus.html" />
         <option value="$PROJECT_DIR$/admin/report.html" />
         <option value="$PROJECT_DIR$/resource/css/profile.css" />
         <option value="$PROJECT_DIR$/resource/css/choose-bus.css" />
         <option value="$PROJECT_DIR$/resource/css/history.css" />
         <option value="$PROJECT_DIR$/resource/css/report.css" />
-        <option value="$PROJECT_DIR$/driver/profile.html" />
-        <option value="$PROJECT_DIR$/student/profile.html" />
-        <option value="$PROJECT_DIR$/driver/queue.html" />
         <option value="$PROJECT_DIR$/resource/js/student/history.js" />
         <option value="$PROJECT_DIR$/resource/js/driver/history.js" />
         <option value="$PROJECT_DIR$/resource/css/register.css" />
@@ -123,6 +85,23 @@
         <option value="$PROJECT_DIR$/student/login.html" />
         <option value="$PROJECT_DIR$/driver/login.html" />
         <option value="$PROJECT_DIR$/resource/css/login/login.css" />
+        <option value="$PROJECT_DIR$/resource/js/driver/logout.js" />
+        <option value="$PROJECT_DIR$/resource/js/student/logout.js" />
+        <option value="$PROJECT_DIR$/api/include/DB.php" />
+        <option value="$PROJECT_DIR$/api/general/login.php" />
+        <option value="$PROJECT_DIR$/resource/js/general/logout.js" />
+        <option value="$PROJECT_DIR$/resource/js/driver/auth.js" />
+        <option value="$PROJECT_DIR$/student/choose-bus.html" />
+        <option value="$PROJECT_DIR$/student/get-number.html" />
+        <option value="$PROJECT_DIR$/student/history.html" />
+        <option value="$PROJECT_DIR$/student/profile.html" />
+        <option value="$PROJECT_DIR$/driver/queue.html" />
+        <option value="$PROJECT_DIR$/driver/profile.html" />
+        <option value="$PROJECT_DIR$/driver/history.html" />
+        <option value="$PROJECT_DIR$/driver/choose-bus.html" />
+        <option value="$PROJECT_DIR$/resource/js/student/auth.js" />
+        <option value="$PROJECT_DIR$/resource/js/student/login.js" />
+        <option value="$PROJECT_DIR$/resource/js/driver/login.js" />
       </list>
     </option>
   </component>
@@ -239,6 +218,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="driver" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -254,28 +255,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="queue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="queue" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,14 +377,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\queue\resource" />
+      <recent name="C:\xampp\htdocs\queue\resource\js\general" />
       <recent name="C:\xampp\htdocs\queue\resource\js\driver" />
+      <recent name="C:\xampp\htdocs\queue\resource" />
       <recent name="C:\xampp\htdocs\queue\api\route_queue" />
       <recent name="C:\xampp\htdocs\queue\api\route" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\queue\resource\css" />
       <recent name="C:\xampp\htdocs\queue\resource\js\student" />
+      <recent name="C:\xampp\htdocs\queue\resource\css" />
       <recent name="C:\xampp\htdocs\queue\resource\js\driver" />
       <recent name="C:\xampp\htdocs\queue\student" />
       <recent name="C:\xampp\htdocs\queue\driver" />
@@ -487,15 +467,15 @@
       <workItem from="1494061695152" duration="7952000" />
       <workItem from="1494160509724" duration="15757000" />
       <workItem from="1494256475287" duration="8382000" />
-      <workItem from="1494318403195" duration="15015000" />
+      <workItem from="1494318403195" duration="16892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48893000" />
+    <option name="totallyTimeSpent" value="50770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -506,7 +486,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -558,78 +538,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/css/login/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/js/driver/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/student/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <marker date="1494172042422" expanded="true" signature="355:419" ph="select *from... student" />
-            <marker date="1494172042422" expanded="true" signature="567:1079" ph="insert into driver... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/general/getBusStations.php" />
-    <entry file="file://$PROJECT_DIR$/api/general/getLocations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/include/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <marker date="1494182160970" expanded="true" signature="966:992" ph="SELECT MAX(i... ${$table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/driver/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <marker date="1494259300125" expanded="true" signature="392:455" ph="select *from... driver" />
-            <marker date="1494259300125" expanded="true" signature="603:1178" ph="insert into driver... " />
-            <marker date="1494259300125" expanded="true" signature="603:1181" ph="insert into driver... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/general/getBuses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <marker date="1494177878053" expanded="true" signature="61:78" ph="select * fro... bus" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/js/student/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/js/student/register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -675,16 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/general/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1494171015639" expanded="true" signature="194:275" ph="select *from... ${$_POST['type']}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/route_queue/getRouteQueue.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -722,26 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/driver/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/js/driver/choose-bus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/get-number.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="422" column="54" selection-start-line="422" selection-start-column="54" selection-end-line="422" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -768,14 +650,6 @@
             <marker date="1494334129418" expanded="true" signature="109:441" ph="select rq.id... route_queue" />
             <marker date="1494334129418" expanded="true" signature="109:488" ph="select rq.id... route_queue" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource/js/student/get-number.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="42" column="61" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -876,44 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/choose-bus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/driver/choose-bus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="87" column="65" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/driver/queue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="400" column="142" selection-start-line="400" selection-start-column="142" selection-end-line="400" selection-end-column="142" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/js/student/history.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -950,16 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/driver/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="88" column="68" selection-start-line="88" selection-start-column="62" selection-end-line="88" selection-end-column="68" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/materialize/dist/css/materialize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -968,9 +786,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resource/css/login/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/driver/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="2159">
           <caret line="127" column="18" selection-start-line="124" selection-start-column="12" selection-end-line="127" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#9;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -978,9 +804,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/student/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="2057">
           <caret line="121" column="10" selection-start-line="121" selection-start-column="10" selection-end-line="121" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#8;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -990,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/student/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+        <state relative-caret-position="-323">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1000,18 +834,164 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/driver/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/css/login/login.css">
+    <entry file="file://$PROJECT_DIR$/resource/js/student/get-number.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/driver/logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/general/getBuses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1494177878053" expanded="true" signature="61:78" ph="select * fro... bus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/include/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding>
+            <marker date="1494182160970" expanded="true" signature="966:992" ph="SELECT MAX(i... ${$table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/general/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <marker date="1494345445818" expanded="true" signature="194:275" ph="select *from... ${$_POST['type']}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/general/logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/driver/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/choose-bus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/get-number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/queue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/driver/choose-bus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/student/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/student/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/js/driver/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
           <folding />
         </state>
       </provider>

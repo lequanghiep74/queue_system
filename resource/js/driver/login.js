@@ -13,7 +13,10 @@ $(document).ready(function () {
             type: 'post',
             dataType: 'text',
             data: obj,
-            success: function () {
+            success: function (data) {
+                data = JSON.parse(data);
+                data.type = 'driver';
+                window.localStorage.setItem('user', JSON.stringify(data));
                 window.location.replace("choose-bus.html");
             },
             error: function (error) {

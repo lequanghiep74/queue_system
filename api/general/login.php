@@ -9,8 +9,8 @@ if (isset($_POST['username'])
     $data = $db->queryOneRow("select *from " . $_POST['type'] . " where username = '" . $_POST['username'] . "'");
     if ($data != null) {
         $_SESSION['user'] = $data;
-        header($_SESSION['user'], true, 200);
-        echo 'Login success';
+        header(json_encode($_SESSION['user']), true, 200);
+        echo json_encode($_SESSION['user']);
     } else {
         header('Username or password is invalid', true, 400);
         echo 'Username or password is invalid';
