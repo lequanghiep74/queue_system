@@ -28,11 +28,11 @@ $(document).ready(function () {
             dataType: 'text',
             data: obj,
             success: function () {
-                alert("Register Success");
+                swal("Register Success", "Go to login now!", "success");
                 window.location.href = "login.html";
             },
             error: function (error) {
-                alert(error.responseText);
+                swal(error.responseText,"error");
             }
         });
     });
