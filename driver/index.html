@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        if (window.localStorage.getItem('user') !== null) {
+            var user = JSON.parse(window.localStorage.getItem('user'));
+            if (user.type === 'driver') {
+                window.location.replace("choose-bus.html");
+            }
+        } else {
+            window.location.replace("login.html");
+        }
+    </script>
+</head>
+<body>
+<p>Waiting........</p>
+</body>
+</html>

@@ -1,17 +1,10 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: aizen115
- * Date: 6/3/2016
- * Time: 1:45 PM
- */
 class DB extends \mysqli
 {
-    public $host = "localhost:3306";
-    public $user = "root";
-    public $password = "root";
-    public $dbName = "mydb";
+    public $host = "sql300.freevnn.com";
+    public $user = "freev_20075840";
+    public $password = "12345678";
+    public $dbName = "freev_20075840_queue_system";
 
     public function __construct($host = null, $user = null, $password = null, $dbName = null)
     {

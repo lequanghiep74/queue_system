@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if (window.localStorage.getItem('user') !== null && window.localStorage.getItem('user') !== undefined) {
+    if (window.localStorage.getItem('user') !== null) {
         var user = JSON.parse(window.localStorage.getItem('user'));
         if (user.type === 'admin') {
             window.location.replace("report.html");
@@ -10,7 +10,7 @@ $(document).ready(function () {
         var obj = {
             username: $('#username').val(),
             password: $('#password').val(),
-            type: 'driver'
+            type: 'admin'
         };
         $.ajax({
             url: "/queue/api/general/login.php",

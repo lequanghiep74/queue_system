@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    if (window.localStorage.getItem('user') !== null && window.localStorage.getItem('user') !== undefined) {
+    if (window.localStorage.getItem('user') !== null) {
         var user = JSON.parse(window.localStorage.getItem('user'));
         if (user.type === 'driver') {
             window.location.replace("choose-bus.html");
