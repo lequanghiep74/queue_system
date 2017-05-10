@@ -71,9 +71,9 @@
             <!--link-->
             <div class="card-tabs">
                 <ul class="tabs tabs-fixed-width">
-                    <li class="tab"><a href="#general">General</a></li>
-                    <li class="tab"><a href="#detail">Detail</a></li>
-                    <li class="tab"><a href="#password">Password</a></li>
+                    <li class="tab" data="general"><a href="#general">General</a></li>
+                    <li class="tab" data="detail"><a href="#detail">Detail</a></li>
+                    <li class="tab" data="password"><a href="#password">Password</a></li>
                 </ul>
             </div> <!--end link-->
             <form action="#">
@@ -82,31 +82,23 @@
 
                     <div id="general">
                         <span class="teal-text"><b>User name</b></span>
-                        <input id="user_name" type="text" class="validate" name="user_name" value="anhladaica" disabled>
+                        <input id="user_name" type="text" class="validate" name="user_name" disabled>
                         <span class="teal-text"><b>Full name</b></span>
-                        <input id="full_name" type="text" class="validate" name="full_name" value="Nguyen Van A">
+                        <input id="full_name" type="text" class="validate" name="full_name">
                         <span class="teal-text"><b>Day of birth</b></span>
-                        <input type="date" class="datepicker" id="day_of_birth" name="day_of_birth" value="2012-01-02">
+                        <input type="date" class="datepicker" id="day_of_birth" name="day_of_birth">
                         <span class="teal-text"><b>Phone number</b></span>
-                        <input id="phone_number" type="number" class="validate" name="phone_number" value="012283719">
+                        <input id="phone_number" type="number" class="validate" name="phone_number">
                     </div>
 
                     <div id="detail">
                         <span class="teal-text"><b>Identity Card</b></span>
-                        <input id="identity_card" type="text" class="validate" name="identity_card" value="128390123"
-                               disabled>
-                        <span class="teal-text"><b>Driver's License</b></span>
-                        <input id="driver_license" type="text" class="validate" name="driver_license" value="128390123"
-                               disabled>
-                        <span class="teal-text"><b>ID Staff</b></span>
-                        <input id="id_staff" type="text" class="validate" name="id_staff" value="128390123" disabled>
+                        <input id="identity_id" type="text" class="validate" name="identity_id">
+                        <span class="teal-text"><b>Student No</b></span>
+                        <input id="student_no" type="text" class="validate" name="student_no">
                     </div><!--end content-->
 
                     <div id="password">
-                        <span class="teal-text"><b>Password current</b></span>
-                        <input placeholder="Enter password current" id="password_current" type="password"
-                               class="validate"
-                               name="id_staff">
                         <span class="teal-text"><b>New password</b></span>
                         <input placeholder="Enter new password" id="new_password" type="password" class="validate"
                                name="new_password">
@@ -119,11 +111,8 @@
 
                 <!--save or cancel-->
                 <div class="card-action" style="text-align: center; border-top:none; padding-bottom: 10px;">
-                    <button class="btn waves-effect waves-light no-border-radius" type="submit"
-                            name="action"
-                            id="submit-btn">
-                        Update
-                    </button>
+                    <input type="button" value="Update" class="btn waves-effect waves-light no-border-radius" id="submit-btn">
+                    </input>
                 </div> <!--save or cancel-->
             </form>
         </div>
