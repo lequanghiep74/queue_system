@@ -37,14 +37,9 @@ $(document).ready(function () {
 
     function deleteBus(id) {
         $.ajax({
-            url: '/queue/api/bus/deleteBus.php',
-            type: 'get',
-            cache: false,
-            dataType: 'text',
-            data: {
-                id: id
-            },
+            url: '/queue/api/bus/deleteBus.php?id=' + id,
             success: function () {
+                swal("Deleted!", "Your bus has been deleted.", "success");
                 getListBus();
             },
             error: function (error) {
@@ -79,7 +74,19 @@ $(document).ready(function () {
                     });
 
                     $('.delete').click(function () {
-                        deleteBus($(this).attr('data-id'));
+                        var id = $(this).attr('data-id');
+                        swal({
+                                title: "Are you sure?",
+                                text: "You will not be able to recover this bus!",
+                                type: "warning",
+                                showCancelButton: true,
+                                confirmButtonColor: "#DD6B55",
+                                confirmButtonText: "Yes, delete it!",
+                                closeOnConfirm: false
+                            },
+                            function () {
+                                deleteBus(id);
+                            });
                     });
                 } else {
                     $('#tableBus > tbody:last-child').append('<tr><td colspan="4">Empty data</td></tr>');

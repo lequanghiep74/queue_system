@@ -41,6 +41,7 @@ $(document).ready(function () {
                 id: id
             },
             success: function () {
+                swal("Deleted!", "Your location has been deleted.", "success");
                 getListLocation();
             },
             error: function (error) {
@@ -73,7 +74,19 @@ $(document).ready(function () {
                     });
 
                     $('.delete').click(function () {
-                        deleteLocation($(this).attr('data-id'));
+                        var id = $(this).attr('data-id');
+                        swal({
+                                title: "Are you sure?",
+                                text: "You will not be able to recover this location!",
+                                type: "warning",
+                                showCancelButton: true,
+                                confirmButtonColor: "#DD6B55",
+                                confirmButtonText: "Yes, delete it!",
+                                closeOnConfirm: false
+                            },
+                            function () {
+                                deleteLocation(id);
+                            });
                     });
                 } else {
                     $('#tableLocation > tbody:last-child').append('<tr><td colspan="3">Empty data</td></tr>');
