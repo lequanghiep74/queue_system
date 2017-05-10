@@ -25,7 +25,7 @@ $(document).ready(function () {
                 window.location.replace("report.html");
             },
             error: function (error) {
-                alert(error.responseText);
+                swal("error", error.responseText, "error");
             }
         });
     });

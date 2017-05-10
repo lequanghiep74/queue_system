@@ -29,7 +29,7 @@ $(document).ready(function () {
                     getListBus();
                 },
                 error: function (error) {
-                    alert(error.responseText);
+                    swal("error", error.responseText, "error");
                 }
             });
         }
@@ -48,7 +48,7 @@ $(document).ready(function () {
                 getListBus();
             },
             error: function (error) {
-                alert(error.responseText);
+                swal("error", error.responseText, "error");
             }
         });
     }
@@ -86,7 +86,7 @@ $(document).ready(function () {
                 }
             },
             error: function (error) {
-                alert(error.responseText);
+                swal("error", error.responseText, "error");
             }
         });
     }

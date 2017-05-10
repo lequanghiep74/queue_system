@@ -15,7 +15,7 @@ $(document).ready(function () {
             $('#bus').html('<b>Bus </b>' + data.plate_no);
         },
         error: function (error) {
-            alert(error.responseText);
+            swal("error", error.responseText, "error");
         }
     });
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
                 window.location.href = 'history.html';
             },
             error: function (error) {
-                alert(error.responseText);
+                swal("error", error.responseText, "error");
             }
         });
     };
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 getStudentQueueByRouteQueue();
             },
             error: function (error) {
-                alert(error.responseText);
+                swal("error", error.responseText, "error");
             }
         });
     };
@@ -67,7 +67,7 @@ $(document).ready(function () {
                 }
             },
             error: function (error) {
-                alert(error.responseText);
+                swal("error", error.responseText, "error");
             }
         });
     }

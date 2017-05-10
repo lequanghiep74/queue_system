@@ -28,11 +28,20 @@ $(document).ready(function () {
             dataType: 'text',
             data: obj,
             success: function () {
-                alert("Register Success");
-                window.location.href = "login.html";
+                swal({
+                        title: "Register Success",
+                        type: "success",
+                        showCancelButton: false,
+                        confirmButtonColor: "rgb(140, 212, 245)",
+                        confirmButtonText: "Go to Login!",
+                        closeOnConfirm: false
+                    },
+                    function () {
+                        window.location.href = "login.html";
+                    });
             },
             error: function (error) {
-                alert(error.responseText);
+                swal("error", error.responseText, "error");
             }
         });
     });
