@@ -6,6 +6,7 @@ $(document).ready(function () {
     $.ajax({
         url: "/queue/api/route_queue/getRouteQueueById.php?id=" + id,
         type: 'get',
+        cache: false,
         success: function (data) {
             data = JSON.parse(data)[0];
             $('#fromLocation').html('<b>From </b>' + data.from_location);
@@ -23,6 +24,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/queue/api/route_queue/updateQueue.php?id=" + id + "&status=" + status,
             type: 'get',
+            cache: false,
             success: function () {
                 window.localStorage.setItem('queue_id', null);
                 window.location.href = 'history.html';
@@ -38,6 +40,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/queue/api/route_queue/updateStudentQueue.php?id=" + student_queue.id + "&status=" + status + "&route_queue_id=" + id,
             type: 'get',
+            cache: false,
             success: function () {
                 getStudentQueueByRouteQueue();
             },
@@ -51,6 +54,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/queue/api/route_queue/getStudentQueueByRouteQueueId.php?id=" + id,
             type: 'get',
+            cache: false,
             success: function (data) {
                 student_queue = JSON.parse(data)[0];
                 if (student_queue !== undefined) {

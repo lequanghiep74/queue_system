@@ -14,7 +14,8 @@ $(document).ready(function () {
         };
         $.ajax({
             url: "/queue/api/general/login.php",
-            type: 'post',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: obj,
             success: function (data) {

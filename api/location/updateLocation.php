@@ -2,10 +2,10 @@
 require "../include/DB.php";
 $db = new DB();
 session_start();
-if (isset($_POST['id'])
-    && isset($_POST['name'])
+if (isset($_GET['id'])
+    && isset($_GET['name'])
 ) {
-    $query = "update location set name = '" . $_POST['name'] . "' where id = " . $_POST['id'];
+    $query = "update location set name = '" . $_GET['name'] . "' where id = " . $_GET['id'];
     if ($db->query($query)) {
         header('ok', true, 200);
     } else {

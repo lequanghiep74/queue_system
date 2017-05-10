@@ -14,6 +14,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/queue/api/general/getBuses.php",
             type: 'get',
+            cache: false,
             success: function (data) {
                 data = JSON.parse(data);
                 data.forEach(function (val) {
@@ -33,6 +34,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/queue/api/general/getLocations.php",
             type: 'get',
+            cache: false,
             success: function (data) {
                 data = JSON.parse(data);
                 data.forEach(function (val) {
@@ -63,7 +65,8 @@ $(document).ready(function () {
         };
         $.ajax({
             url: "/queue/api/route_queue/createRouteQueue.php",
-            type: 'post',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: obj,
             success: function (data) {

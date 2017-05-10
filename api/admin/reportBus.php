@@ -2,12 +2,12 @@
 require "../include/DB.php";
 $db = new DB();
 session_start();
-if (isset($_POST['report_date'])
+if (isset($_GET['report_date'])
 ) {
     $query = "select b.bus_no, b.plate_no, count(*) as count "
         . "from route_queue rq "
         . "inner join bus b on b.id = rq.bus_id "
-        . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_POST['report_date'] . "' and status = 1 "
+        . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_GET['report_date'] . "' and status = 1 "
         . "group by rq.bus_id";
     $data = $db->query($query);
     if ($data) {

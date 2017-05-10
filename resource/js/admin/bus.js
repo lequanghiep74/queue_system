@@ -14,7 +14,8 @@ $(document).ready(function () {
             && $('#plateNo').val() !== '' && $('#plateNo').val() !== null && $('#plateNo').val() !== undefined) {
             $.ajax({
                 url: url,
-                type: 'POST',
+                type: 'get',
+                cache: false,
                 dataType: 'text',
                 data: {
                     id: bus.id,
@@ -37,7 +38,8 @@ $(document).ready(function () {
     function deleteBus(id) {
         $.ajax({
             url: '/queue/api/bus/deleteBus.php',
-            type: 'POST',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: {
                 id: id
@@ -54,6 +56,7 @@ $(document).ready(function () {
     function getListBus() {
         $.ajax({
             url: "/queue/api/bus/getBus.php",
+            cache: false,
             success: function (data) {
                 data = JSON.parse(data);
                 $('#tableBus > tbody').html('');

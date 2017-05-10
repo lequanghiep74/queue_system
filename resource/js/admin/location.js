@@ -12,7 +12,8 @@ $(document).ready(function () {
         if ($('#location').val() !== '' && $('#location').val() !== null && $('#location').val() !== undefined) {
             $.ajax({
                 url: url,
-                type: 'POST',
+                type: 'get',
+                cache: false,
                 dataType: 'text',
                 data: {
                     id: location.id,
@@ -33,7 +34,8 @@ $(document).ready(function () {
     function deleteLocation(id) {
         $.ajax({
             url: '/queue/api/location/deleteLocation.php',
-            type: 'POST',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: {
                 id: id
@@ -50,6 +52,7 @@ $(document).ready(function () {
     function getListLocation() {
         $.ajax({
             url: "/queue/api/location/getLocation.php",
+            cache: false,
             success: function (data) {
                 data = JSON.parse(data);
                 $('#tableLocation > tbody').html('');

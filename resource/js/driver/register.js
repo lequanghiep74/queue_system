@@ -24,7 +24,8 @@ $(document).ready(function () {
         };
         $.ajax({
             url: "/queue/api/driver/register.php",
-            type: 'post',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: obj,
             success: function () {

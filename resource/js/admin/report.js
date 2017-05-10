@@ -17,7 +17,8 @@ $(document).ready(function () {
     function getSummaryReport() {
         $.ajax({
             url: "/queue/api/admin/report.php",
-            type: 'post',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: {
                 report_date: $('#report_date').val()
@@ -40,7 +41,8 @@ $(document).ready(function () {
     function getBusReport() {
         $.ajax({
             url: "/queue/api/admin/reportBus.php",
-            type: 'post',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: {
                 report_date: $('#report_date').val()

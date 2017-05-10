@@ -2,11 +2,11 @@
 require "../include/DB.php";
 $db = new DB();
 session_start();
-if (isset($_POST['report_date'])
+if (isset($_GET['report_date'])
 ) {
     $query = "select sum(accept) as accept, sum(cancel) as cancel "
         . "from route_queue "
-        . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_POST['report_date'] . "';";
+        . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_GET['report_date'] . "';";
     $data = $db->query($query);
     if ($data) {
         $datas = array();

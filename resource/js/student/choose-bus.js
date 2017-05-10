@@ -16,6 +16,7 @@ $(document).ready(function () {
             $.ajax({
                 url: "/queue/api/general/getBuses.php",
                 type: 'get',
+                cache: false,
                 success: function (data) {
                     data = JSON.parse(data);
                     $('#selectBus').val('none');
@@ -46,6 +47,7 @@ $(document).ready(function () {
             $.ajax({
                 url: "/queue/api/route_queue/getBusOfRouteQueue.php",
                 type: 'get',
+                cache: false,
                 data: obj,
                 success: function (data) {
                     data = JSON.parse(data);
@@ -73,6 +75,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/queue/api/general/getLocations.php",
             type: 'get',
+            cache: false,
             success: function (data) {
                 data = JSON.parse(data);
                 data.forEach(function (val) {
@@ -116,6 +119,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/queue/api/route_queue/getRouteQueue.php",
             type: 'get',
+            cache: false,
             dataType: 'text',
             data: obj,
             success: function (data) {

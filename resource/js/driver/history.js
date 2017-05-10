@@ -4,6 +4,7 @@ $(document).ready(function () {
     var getHistory = function getHistory() {
         $.ajax({
             url: "/queue/api/driver/history.php",
+            cache: false,
             dataType: "text",
             type: 'get',
             success: function (data) {

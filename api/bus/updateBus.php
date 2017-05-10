@@ -2,12 +2,12 @@
 require "../include/DB.php";
 $db = new DB();
 session_start();
-if (isset($_POST['id'])
-    && isset($_POST['bus_no'])
-    && isset($_POST['plate_no'])
+if (isset($_GET['id'])
+    && isset($_GET['bus_no'])
+    && isset($_GET['plate_no'])
 ) {
-    $query = "update bus set bus_no = '" . $_POST['bus_no'] . "', plate_no = '" . $_POST['plate_no'] . "' "
-        . "where id = " . $_POST['id'];
+    $query = "update bus set bus_no = '" . $_GET['bus_no'] . "', plate_no = '" . $_GET['plate_no'] . "' "
+        . "where id = " . $_GET['id'];
     if ($db->query($query)) {
         header('ok', true, 200);
     } else {

@@ -6,6 +6,7 @@ $(document).ready(function () {
             url: "/queue/api/student/history.php",
             dataType: "text",
             type: 'get',
+            cache: false,
             success: function (data) {
                 data = JSON.parse(data);
                 data.forEach(function (val) {

@@ -1,32 +1,32 @@
 <?php
 require "../include/DB.php";
 $db = new DB();
-if (isset($_POST['username'])
-    && isset($_POST['password'])
-    && isset($_POST['full_name'])
-    && isset($_POST['identity_id'])
-    && isset($_POST['day_of_birth'])
-    && isset($_POST['driver_license'])
-    && isset($_POST['staff_id'])
-    && isset($_POST['sex'])
-    && isset($_POST['phone_number'])
+if (isset($_GET['username'])
+    && isset($_GET['password'])
+    && isset($_GET['full_name'])
+    && isset($_GET['identity_id'])
+    && isset($_GET['day_of_birth'])
+    && isset($_GET['driver_license'])
+    && isset($_GET['staff_id'])
+    && isset($_GET['sex'])
+    && isset($_GET['phone_number'])
 ) {
-    $data = $db->queryOneRow("select *from driver where username = '". $_POST['username'] ."'");
+    $data = $db->queryOneRow("select *from driver where username = '". $_GET['username'] ."'");
     if ($data != null) {
         header('Username is existing', true, 400);
         echo 'Username is existing';
     } else {
         $query = "insert into driver (username, password, fullname,"
             . " identity_id, dob, driver_license, staff_id, sex, phone)"
-            . "VALUES ('" . $_POST['username'] . "',"
-            . "'" . $_POST['password'] . "',"
-            . "'" . $_POST['full_name'] . "',"
-            . "'" . $_POST['identity_id'] . "',"
-            . "STR_TO_DATE('" . $_POST['day_of_birth'] . "', '%d/%m/%Y'),"
-            . "'" . $_POST['driver_license'] . "',"
-            . "'" . $_POST['staff_id'] . "',"
-            . $_POST['sex'] . ","
-            . "'" . $_POST['phone_number'] . "')";
+            . "VALUES ('" . $_GET['username'] . "',"
+            . "'" . $_GET['password'] . "',"
+            . "'" . $_GET['full_name'] . "',"
+            . "'" . $_GET['identity_id'] . "',"
+            . "STR_TO_DATE('" . $_GET['day_of_birth'] . "', '%d/%m/%Y'),"
+            . "'" . $_GET['driver_license'] . "',"
+            . "'" . $_GET['staff_id'] . "',"
+            . $_GET['sex'] . ","
+            . "'" . $_GET['phone_number'] . "')";
         if ($db->query($query) === true) {
             header(' ', true, 200);
         } else {

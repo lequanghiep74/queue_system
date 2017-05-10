@@ -14,7 +14,8 @@ $(document).ready(function () {
     $('#btnGetNumber').click(function () {
         $.ajax({
             url: "/queue/api/route_queue/enterRouteQueue.php",
-            type: 'post',
+            type: 'get',
+            cache: false,
             dataType: 'text',
             data: {
                 route_queue_id: route_queue.id

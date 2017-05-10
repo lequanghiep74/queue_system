@@ -2,11 +2,11 @@
 require "../include/DB.php";
 session_start();
 $db = new DB();
-if (isset($_POST['username'])
-    && isset($_POST['password'])
-    && isset($_POST['type'])
+if (isset($_GET['username'])
+    && isset($_GET['password'])
+    && isset($_GET['type'])
 ) {
-    $data = $db->queryOneRow("select *from " . $_POST['type'] . " where username = '" . $_POST['username'] . "'");
+    $data = $db->queryOneRow("select *from " . $_GET['type'] . " where username = '" . $_GET['username'] . "'");
     if ($data != null) {
         $_SESSION['user'] = $data;
         header(json_encode($_SESSION['user']), true, 200);

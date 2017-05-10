@@ -2,9 +2,9 @@
 require "../include/DB.php";
 $db = new DB();
 session_start();
-if (isset($_POST['id'])
+if (isset($_GET['id'])
 ) {
-    $query = "delete from location where id = " . $_POST['id'];
+    $query = "delete from location where id = " . $_GET['id'];
     if ($db->query($query)) {
         header('ok', true, 200);
     } else {
