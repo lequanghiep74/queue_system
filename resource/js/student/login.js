@@ -25,7 +25,7 @@ $(document).ready(function () {
                 window.location.replace("choose-bus.html");
             },
             error: function (error) {
-                alert(error.responseText);
+                swal(error.responseText,"error");
             }
         });
     });

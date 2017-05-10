@@ -25,7 +25,7 @@ $(document).ready(function () {
                 $('#selectBus').material_select();
             },
             error: function (error) {
-                alert(error.responseText);
+                swal(error.responseText,"error");
             }
         });
     };
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 $(elementId).material_select();
             },
             error: function (error) {
-                alert(error.responseText);
+                swal(error.responseText,"error");
             }
         });
     };
@@ -75,7 +75,7 @@ $(document).ready(function () {
                 window.location.href = 'queue.html';
             },
             error: function (error) {
-                alert(error.responseText);
+                swal(error.responseText,"error");
             }
         });
     });

@@ -33,7 +33,7 @@ $(document).ready(function () {
                 $('#report').show();
             },
             error: function (error) {
-                alert(error.responseText);
+                swal(error.responseText,"error");
             }
         });
     }
@@ -65,7 +65,7 @@ $(document).ready(function () {
                 $('#busReport').show();
             },
             error: function (error) {
-                alert(error.responseText);
+                swal(error.responseText,"error");
             }
         });
     }
