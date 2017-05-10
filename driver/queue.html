@@ -25,9 +25,11 @@
     <script src="../bower_components/materialize/dist/js/materialize.js"></script>
 
     <!--Import custom js-->
+    <script src="../bower_components/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../resource/js/driver/get-number.js"></script>
     <script src="../resource/js/general/logout.js"></script>
     <script src="../resource/js/driver/auth.js"></script>
+    <link rel="stylesheet" href="../bower_components/sweetalert/dist/sweetalert.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -403,18 +405,18 @@
     <div class="row">
         <button onclick="updateStudentQueue('accept')"
            id="btn-accept"
-           style="font-size: 12px"
+           style="font-size: 16px"
            class="waves-effect waves-light btn col s4 m2 blue darken-1 offset-s2 offset-m3">ACCPECT</button>
-        <button style="margin-left: 10px; font-size: 12px" onclick="updateStudentQueue('decline')"
+        <button style="margin-left: 10px; font-size: 16px" onclick="updateStudentQueue('decline')"
            id="btn-decline"
            class="waves-effect red waves-light btn col s4 m2">Rejected</button>
     </div>
 
     <div class="row">
         <a onclick="updateQueue('run')"
-           style="font-size: 12px"
+           style="font-size: 16px"
            class="green lighten-1 waves-effect waves-light btn col s4 m2 offset-s2 offset-m3">Run</a>
-        <a onclick="updateQueue('cancel')" style="margin-left: 10px; font-size: 12px" onclick="updateStudentQueue('cancel')"
+        <a onclick="updateQueue('cancel')" style="margin-left: 10px; font-size: 16px" onclick="updateStudentQueue('cancel')"
            class="waves-effect waves-light btn col s4 m2 grey darken-1">CANCEL</a>
     </div>
 

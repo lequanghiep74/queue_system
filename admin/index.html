@@ -9,6 +9,8 @@
             var user = JSON.parse(window.localStorage.getItem('user'));
             if (user.type === 'admin') {
                 window.location.replace("report.html");
+            } else {
+                window.location.replace("login.html");
             }
         } else {
             window.location.replace("login.html");
