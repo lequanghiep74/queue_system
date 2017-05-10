@@ -6,7 +6,8 @@ if (isset($_GET['username'])
     && isset($_GET['password'])
     && isset($_GET['type'])
 ) {
-    $data = $db->queryOneRow("select *from " . $_GET['type'] . " where username = '" . $_GET['username'] . "'");
+    $query = "select *from " . $_GET['type'] . " where username = '" . $_GET['username'] . "' and password ='" . $_GET['password'] . "'";
+    $data = $db->queryOneRow($query);
     if ($data != null) {
         $_SESSION['user'] = $data;
         header(json_encode($_SESSION['user']), true, 200);
@@ -15,8 +16,7 @@ if (isset($_GET['username'])
         header('Username or password is invalid', true, 400);
         echo 'Username or password is invalid';
     }
-}
-else {
+} else {
     header('Missing data', true, 400);
     echo 'Missing data';
 }

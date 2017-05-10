@@ -34,7 +34,7 @@ $(document).ready(function () {
                         showCancelButton: false,
                         confirmButtonColor: "rgb(140, 212, 245)",
                         confirmButtonText: "Go to Login!",
-                        closeOnConfirm: false
+                        closeOnConfirm: true
                     },
                     function () {
                         window.location.href = "login.html";
