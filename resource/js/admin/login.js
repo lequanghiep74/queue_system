@@ -13,7 +13,7 @@ $(document).ready(function () {
             type: 'admin'
         };
         $.ajax({
-            url: "../../../api/general/login.php",
+            url: "/queue/api/general/login.php",
             type: 'get',
             cache: false,
             dataType: 'text',

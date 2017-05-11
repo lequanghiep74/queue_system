@@ -43,7 +43,7 @@ $(document).ready(function () {
         }
         if (isUpdate) {
             $.ajax({
-                url: "../../../api/driver/updateProfile.php",
+                url: "/queue/api/driver/updateProfile.php",
                 type: 'get',
                 cache: false,
                 dataType: 'text',
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
     var getUserById = function (id) {
         $.ajax({
-            url: "../../../api/driver/getProfile.php?id=" + id,
+            url: "/queue/api/driver/getProfile.php?id=" + id,
             cache: false,
             success: function (data) {
                 profile = JSON.parse(data)[0];

@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     $("#submit-btn").click(function () {
-        var url = location.id ? '../../../api/location/updateLocation.php' : '../../../api/location/saveLocation.php';
+        var url = location.id ? '/queue/api/location/updateLocation.php' : '/queue/api/location/saveLocation.php';
         if ($('#location').val() !== '' && $('#location').val() !== null && $('#location').val() !== undefined) {
             $.ajax({
                 url: url,
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     function deleteLocation(id) {
         $.ajax({
-            url: '../../../api/location/deleteLocation.php',
+            url: '/queue/api/location/deleteLocation.php',
             type: 'get',
             cache: false,
             dataType: 'text',
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
     function getListLocation() {
         $.ajax({
-            url: "../../../api/location/getLocation.php",
+            url: "/queue/api/location/getLocation.php",
             cache: false,
             success: function (data) {
                 data = JSON.parse(data);

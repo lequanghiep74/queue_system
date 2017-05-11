@@ -6,18 +6,18 @@ $(document).ready(function () {
     if (window.localStorage.getItem('route_queue')) {
         route_queue = JSON.parse(window.localStorage.getItem('route_queue'))[0];
         initData();
-        setNum(route_queue.queue);
+        setNum(parseInt(route_queue.queue) + 1);
     } else if (window.localStorage.getItem('queue')) {
         queue = JSON.parse(window.localStorage.getItem('queue'));
         $.ajax({
-            url: "../../../api/route_queue/getRouteQueueById.php?id=" + queue.route_id,
+            url: "/queue/api/route_queue/getRouteQueueById.php?id=" + queue.route_id,
             type: 'get',
             cache: false,
             success: function (data) {
                 route_queue = JSON.parse(data)[0];
+                $('#btnGetNumber').hide();
                 initData();
-                setNum(queue.queue)
-                $('#btn-getNum').hide();
+                setNum(parseInt(queue.queue));
             },
             error: function (error) {
                 swal("error", error.responseText, "error");
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     $('#btnGetNumber').click(function () {
         $.ajax({
-            url: "../../../api/route_queue/enterRouteQueue.php",
+            url: "/queue/api/route_queue/enterRouteQueue.php",
             type: 'get',
             cache: false,
             dataType: 'text',
@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     function setNum(num_queue) {
         var num = '0000';
-        var queue = (parseInt(num_queue) + 1).toString();
+        var queue = (num_queue).toString();
         queue = num.substr(queue.length) + queue;
 
         var h = [queue[0], queue[1]];

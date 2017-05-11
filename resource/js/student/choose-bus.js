@@ -14,7 +14,7 @@ $(document).ready(function () {
         $('#selectBus').material_select('destroy');
         if (!isLoadBus) {
             $.ajax({
-                url: "../../../api/general/getBuses.php",
+                url: "/queue/api/general/getBuses.php",
                 type: 'get',
                 cache: false,
                 success: function (data) {
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 start_time: dateStr
             };
             $.ajax({
-                url: "../../../api/route_queue/getBusOfRouteQueue.php",
+                url: "/queue/api/route_queue/getBusOfRouteQueue.php",
                 type: 'get',
                 cache: false,
                 data: obj,
@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     var getLocations = function (elementId) {
         $.ajax({
-            url: "../../../api/general/getLocations.php",
+            url: "/queue/api/general/getLocations.php",
             type: 'get',
             cache: false,
             success: function (data) {
@@ -117,7 +117,7 @@ $(document).ready(function () {
             bus_id: $('#selectBus').val()
         };
         $.ajax({
-            url: "../../../api/route_queue/getRouteQueue.php",
+            url: "/queue/api/route_queue/getRouteQueue.php",
             type: 'get',
             cache: false,
             dataType: 'text',

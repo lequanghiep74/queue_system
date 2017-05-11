@@ -42,7 +42,7 @@ $(document).ready(function () {
         }
         if (isUpdate) {
             $.ajax({
-                url: "../../../api/student/updateProfile.php",
+                url: "/queue/api/student/updateProfile.php",
                 type: 'get',
                 cache: false,
                 dataType: 'text',
@@ -85,7 +85,7 @@ $(document).ready(function () {
 
     var getUserById = function (id) {
         $.ajax({
-            url: "../../../api/student/getProfile.php?id=" + id,
+            url: "/queue/api/student/getProfile.php?id=" + id,
             cache: false,
             success: function (data) {
                 profile = JSON.parse(data)[0];

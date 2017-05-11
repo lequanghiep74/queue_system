@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     function getSummaryReport() {
         $.ajax({
-            url: "../../../api/admin/report.php",
+            url: "/queue/api/admin/report.php",
             type: 'get',
             cache: false,
             dataType: 'text',
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     function getBusReport() {
         $.ajax({
-            url: "../../../api/admin/reportBus.php",
+            url: "/queue/api/admin/reportBus.php",
             type: 'get',
             cache: false,
             dataType: 'text',

@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     var getHistory = function getHistory() {
         $.ajax({
-            url: "../../../api/student/history.php",
+            url: "/queue/api/student/history.php",
             dataType: "text",
             type: 'get',
             cache: false,
@@ -13,9 +13,9 @@ $(document).ready(function () {
                     $('#histories').append(genHistoryItem(val));
                 });
                 $(".activeQueue").click(function () {
-                    var data = JSON.parse($(this).attr('data'));
+                    var queue = $(this).attr('data');
                     window.localStorage.removeItem('route_queue');
-                    window.localStorage.setItem('queue', data);
+                    window.localStorage.setItem('queue', queue);
                     window.location.href = 'get-number.html';
                 });
             },

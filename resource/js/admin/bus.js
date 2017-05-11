@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     $("#submit-btn").click(function () {
-        var url = bus.id ? '../../../api/bus/updateBus.php' : '../../../api/bus/saveBus.php';
+        var url = bus.id ? '/queue/api/bus/updateBus.php' : '/queue/api/bus/saveBus.php';
         if ($('#busNo').val() !== '' && $('#busNo').val() !== null && $('#busNo').val() !== undefined
             && $('#plateNo').val() !== '' && $('#plateNo').val() !== null && $('#plateNo').val() !== undefined) {
             $.ajax({
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     function deleteBus(id) {
         $.ajax({
-            url: '../../../api/bus/deleteBus.php?id=' + id,
+            url: '/queue/api/bus/deleteBus.php?id=' + id,
             success: function () {
                 swal("Deleted!", "Your bus has been deleted.", "success");
                 getListBus();
@@ -50,7 +50,7 @@ $(document).ready(function () {
 
     function getListBus() {
         $.ajax({
-            url: "../../../api/bus/getBus.php",
+            url: "/queue/api/bus/getBus.php",
             cache: false,
             success: function (data) {
                 data = JSON.parse(data);
