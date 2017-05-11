@@ -404,47 +404,46 @@
     <div class="row"></div>
     <div class="row">
         <button onclick="updateStudentQueue('accept')"
-           id="btn-accept"
-           style="font-size: 16px"
-           class="waves-effect waves-light btn col s4 m2 blue darken-1 offset-s2 offset-m3">ACCPECT</button>
+                id="btn-accept"
+                style="font-size: 16px"
+                class="waves-effect waves-light btn col s4 m2 blue darken-1 offset-s2 offset-m3">ACCPECT
+        </button>
         <button style="margin-left: 10px; font-size: 16px" onclick="updateStudentQueue('decline')"
-           id="btn-decline"
-           class="waves-effect red waves-light btn col s4 m2">Rejected</button>
+                id="btn-decline"
+                class="waves-effect red waves-light btn col s4 m2">Rejected
+        </button>
     </div>
 
     <div class="row">
         <a onclick="updateQueue('run')"
            style="font-size: 16px"
            class="green lighten-1 waves-effect waves-light btn col s4 m2 offset-s2 offset-m3">Run</a>
-        <a onclick="updateQueue('cancel')" style="margin-left: 10px; font-size: 16px" onclick="updateStudentQueue('cancel')"
+        <a onclick="updateQueue('cancel')" style="margin-left: 10px; font-size: 16px"
+           onclick="updateStudentQueue('cancel')"
            class="waves-effect waves-light btn col s4 m2 grey darken-1">CANCEL</a>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col s12 m6 offset-m3 position-bottom ">
-            <div class="card-panel">
-                <div class="card-content">
-                    <div class="row">
-                        <span class="teal-text col s12 m12">
+<div class="infoCard">
+    <div class="card-panel infoContent">
+        <div class="card-content">
+                        <span class="teal-text">
                             <i class="material-icons">face</i>
                             <i id="studentName" class="small"></i>
-                        </span>
-                        <span class="teal-text col s12 m12">
+                        </span><br>
+            <span class="teal-text">
                             <i class="material-icons s1">location_on</i>
                             <i id="fromLocation" class="small"></i>
                             <i id="toLocation" class="small"></i>
                         </span><br>
-                        <span class="teal-text col s12 m12">
+            <span class="teal-text">
                             <i class="material-icons s1">watch_later</i>
                             <i id="startTime" class="small"></i>
                         </span><br>
-                        <span class="teal-text col s12 m12">
+            <span class="teal-text">
                             <i class="material-icons s1">directions_bus</i>
                             <i id="bus" class="small"></i>
                         </span>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
