@@ -14,7 +14,7 @@ $(document).ready(function () {
                 });
                 $(".activeQueue").click(function () {
                     var data = JSON.parse($(this).attr('data'));
-                    window.localStorage.setItem('route_queue', null);
+                    window.localStorage.removeItem('route_queue');
                     window.localStorage.setItem('queue', data);
                     window.location.href = 'get-number.html';
                 });
