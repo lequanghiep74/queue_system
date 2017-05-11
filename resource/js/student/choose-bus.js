@@ -124,6 +124,7 @@ $(document).ready(function () {
             data: obj,
             success: function (data) {
                 localStorage.setItem("route_queue", data);
+                localStorage.setItem("queue", null);
                 window.location.href = 'get-number.html';
             },
             error: function (error) {

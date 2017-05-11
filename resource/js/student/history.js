@@ -12,6 +12,12 @@ $(document).ready(function () {
                 data.forEach(function (val) {
                     $('#histories').append(genHistoryItem(val));
                 });
+                $(".activeQueue").click(function () {
+                    var data = JSON.parse($(this).attr('data'));
+                    window.localStorage.setItem('route_queue', null);
+                    window.localStorage.setItem('queue', data);
+                    window.location.href = 'get-number.html';
+                });
             },
             error: function (error) {
                 swal("error", error.responseText, "error");
@@ -45,7 +51,7 @@ $(document).ready(function () {
             + '<div class="col s2 ">';
         switch (data.status) {
             case '0':
-                html += '<a class="btn-floating waves-effect waves-light blue lighten-1 center-element center-align">'
+                html += '<a data=\'' + data + '\'  class="activeQueue btn-floating waves-effect waves-light blue lighten-1 center-element center-align">'
                     + data.queue + '</a>';
                 break;
             case '1':

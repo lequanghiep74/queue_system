@@ -1,15 +1,37 @@
-/**
- * Created by thuan on 3/18/2017.
- */
 $(document).ready(function () {
     $(".button-collapse").sideNav();
+    var route_queue = {};
+    var queue = {};
 
-    var route_queue = JSON.parse(window.localStorage.getItem('route_queue'))[0];
-    $('#fromLocation').html('<b>From </b>' + route_queue.from_location);
-    $('#toLocation').html('<b>To </b>' + route_queue.to_location);
-    $('#startTime').html('<b>Time </b>' + route_queue.start_time);
-    $('#bus').html('<b>Bus </b>' + route_queue.plate_no);
-    $('#currentQueue').html('<b>' + route_queue.queue + '</b>');
+    if (window.localStorage.getItem('route_queue')) {
+        route_queue = JSON.parse(window.localStorage.getItem('route_queue'))[0];
+        initData();
+        setNum(route_queue.queue);
+    } else if (window.localStorage.getItem('queue')) {
+        queue = JSON.parse(window.localStorage.getItem('queue'));
+        $.ajax({
+            url: "/queue/api/route_queue/getRouteQueueById.php?id=" + queue.route_id,
+            type: 'get',
+            cache: false,
+            success: function (data) {
+                route_queue = JSON.parse(data)[0];
+                initData();
+                setNum(queue.queue)
+                $('#btn-getNum').hide();
+            },
+            error: function (error) {
+                swal("error", error.responseText, "error");
+            }
+        });
+    }
+
+    function initData() {
+        $('#fromLocation').html('<b>From </b>' + route_queue.from_location);
+        $('#toLocation').html('<b>To </b>' + route_queue.to_location);
+        $('#startTime').html('<b>Time </b>' + route_queue.start_time);
+        $('#bus').html('<b>Bus </b>' + route_queue.plate_no);
+        $('#currentQueue').html('<b>' + route_queue.queue + '</b>');
+    }
 
     $('#btnGetNumber').click(function () {
         $.ajax({
@@ -30,9 +52,9 @@ $(document).ready(function () {
         });
     });
 
-    function setNum() {
+    function setNum(num_queue) {
         var num = '0000';
-        var queue = (parseInt(route_queue.queue) + 1).toString();
+        var queue = (parseInt(num_queue) + 1).toString();
         queue = num.substr(queue.length) + queue;
 
         var h = [queue[0], queue[1]];
@@ -75,6 +97,4 @@ $(document).ready(function () {
         hoursUnites.className = 'number is-active';
         hoursUnitesOutgoing.className = 'number outgoing';
     }
-
-    setNum();
 });
