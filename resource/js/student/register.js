@@ -22,7 +22,7 @@ $(document).ready(function () {
             sex: $('input[name=sex]:checked').val()
         };
         $.ajax({
-            url: "/queue/api/student/register.php",
+            url: "../../../api/student/register.php",
             type: 'get',
             cache: false,
             dataType: 'text',

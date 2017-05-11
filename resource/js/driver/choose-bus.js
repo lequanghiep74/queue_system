@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     var getBuses = function () {
         $.ajax({
-            url: "/queue/api/general/getBuses.php",
+            url: "../../../api/general/getBuses.php",
             type: 'get',
             cache: false,
             success: function (data) {
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     var getLocations = function (elementId) {
         $.ajax({
-            url: "/queue/api/general/getLocations.php",
+            url: "../../../api/general/getLocations.php",
             type: 'get',
             cache: false,
             success: function (data) {
@@ -64,7 +64,7 @@ $(document).ready(function () {
             bus_id: $('#selectBus').val()
         };
         $.ajax({
-            url: "/queue/api/route_queue/createRouteQueue.php",
+            url: "../../../api/route_queue/createRouteQueue.php",
             type: 'get',
             cache: false,
             dataType: 'text',

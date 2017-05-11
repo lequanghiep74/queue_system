@@ -10,7 +10,7 @@ $(document).ready(function () {
     } else if (window.localStorage.getItem('queue')) {
         queue = JSON.parse(window.localStorage.getItem('queue'));
         $.ajax({
-            url: "/queue/api/route_queue/getRouteQueueById.php?id=" + queue.route_id,
+            url: "../../../api/route_queue/getRouteQueueById.php?id=" + queue.route_id,
             type: 'get',
             cache: false,
             success: function (data) {
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     $('#btnGetNumber').click(function () {
         $.ajax({
-            url: "/queue/api/route_queue/enterRouteQueue.php",
+            url: "../../../api/route_queue/enterRouteQueue.php",
             type: 'get',
             cache: false,
             dataType: 'text',
@@ -43,7 +43,7 @@ $(document).ready(function () {
                 route_queue_id: route_queue.id
             },
             success: function () {
-                localStorage.setItem("route_queue", null);
+                localStorage.removeItem("route_queue");
                 window.location.href = 'history.html';
             },
             error: function (error) {

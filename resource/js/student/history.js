@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     var getHistory = function getHistory() {
         $.ajax({
-            url: "/queue/api/student/history.php",
+            url: "../../../api/student/history.php",
             dataType: "text",
             type: 'get',
             cache: false,
@@ -51,7 +51,7 @@ $(document).ready(function () {
             + '<div class="col s2 ">';
         switch (data.status) {
             case '0':
-                html += '<a data=\'' + data + '\'  class="activeQueue btn-floating waves-effect waves-light blue lighten-1 center-element center-align">'
+                html += '<a data=\'' + JSON.stringify(data) + '\'  class="activeQueue btn-floating waves-effect waves-light blue lighten-1 center-element center-align">'
                     + data.queue + '</a>';
                 break;
             case '1':
