@@ -15,6 +15,7 @@ $(document).ready(function () {
             cache: false,
             success: function (data) {
                 route_queue = JSON.parse(data)[0];
+                route_queue.queue = parseInt(route_queue.accept) + parseInt(route_queue.cancel);
                 $('#btnGetNumber').prop('disabled', true);
                 initData();
                 setNum(parseInt(queue.queue));
