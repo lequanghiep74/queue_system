@@ -33,7 +33,6 @@ $(document).ready(function () {
             obj = {
                 id: profile.id,
                 full_name: $('#full_name').val(),
-                identity_id: $('#identity_id').val(),
                 day_of_birth: $('#day_of_birth').val(),
                 student_no: $('#student_no').val(),
                 phone_number: $('#phone_number').val(),
@@ -96,7 +95,6 @@ $(document).ready(function () {
                 $('#day_of_birth').val(profile.dob);
                 $('#phone_number').val(profile.phone);
                 $('#student_no').val(profile.student_no);
-                $('#identity_id').val(profile.identity_id);
             },
             error: function (error) {
                 swal("error", error.responseText, "error");

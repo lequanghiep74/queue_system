@@ -6,14 +6,12 @@ if (isset($_GET['type'])
 ) {
     if ($_GET['type'] == 'info') {
         if (isset($_GET['full_name'])
-            && isset($_GET['identity_id'])
             && isset($_GET['day_of_birth'])
             && isset($_GET['student_no'])
             && isset($_GET['phone_number'])
         ) {
             $query = "update student set "
                 . "fullname = '" . $_GET['full_name'] . "', "
-                . "identity_id = '" . $_GET['identity_id'] . "', "
                 . "dob = STR_TO_DATE('" . $_GET['day_of_birth'] . "', '%d/%m/%Y'), "
                 . "student_no = '" . $_GET['student_no'] . "', "
                 . "phone = '" . $_GET['phone_number'] . "' "
