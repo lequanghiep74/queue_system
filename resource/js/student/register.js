@@ -15,7 +15,6 @@ $(document).ready(function () {
             username: $('#username').val(),
             password: $('#password').val(),
             full_name: $('#full_name').val(),
-            identity_id: $('#identity_id').val(),
             day_of_birth: $('#day_of_birth').val(),
             student_no: $('#student_no').val(),
             phone_number: $('#phone_number').val(),

@@ -4,7 +4,6 @@ $db = new DB();
 if (isset($_GET['username'])
     && isset($_GET['password'])
     && isset($_GET['full_name'])
-    && isset($_GET['identity_id'])
     && isset($_GET['day_of_birth'])
     && isset($_GET['driver_license'])
     && isset($_GET['staff_id'])
@@ -17,11 +16,10 @@ if (isset($_GET['username'])
         echo 'Username is existing';
     } else {
         $query = "insert into driver (username, password, fullname,"
-            . " identity_id, dob, driver_license, staff_id, sex, phone)"
+            . " dob, driver_license, staff_id, sex, phone)"
             . "VALUES ('" . $_GET['username'] . "',"
             . "'" . $_GET['password'] . "',"
             . "'" . $_GET['full_name'] . "',"
-            . "'" . $_GET['identity_id'] . "',"
             . "STR_TO_DATE('" . $_GET['day_of_birth'] . "', '%d/%m/%Y'),"
             . "'" . $_GET['driver_license'] . "',"
             . "'" . $_GET['staff_id'] . "',"
