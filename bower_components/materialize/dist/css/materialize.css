@@ -984,11 +984,11 @@
 }
 
 .teal-text {
-  color: #EF5350 !important;
+  color: #009688 !important;
 }
 
 .teal-text-history {
-  color: #039be5 !important;
+  color: #009688 !important;
 }
 
 .teal.lighten-5 {
@@ -4008,7 +4008,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #EF5350;
+  background-color: #009688;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4836,7 +4836,7 @@ small {
 }
 
 .tabs .tab a {
-  color: rgba(238, 110, 115, 0.7);
+  color: rgba(0, 150, 136, 0.72);
   display: block;
   width: 100%;
   height: 100%;
@@ -4849,7 +4849,7 @@ small {
 
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #EF5350;
+  color: #009688;
 }
 
 .tabs .tab.disabled a,
@@ -4862,7 +4862,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  background-color: rgba(0, 150, 136, 0.72);
   will-change: left, right;
 }
 
@@ -4990,7 +4990,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #EF5350;
+  background-color: #009688;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;

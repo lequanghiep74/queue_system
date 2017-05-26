@@ -1,5 +1,5 @@
 #card-number {
-    background-color: #cc4c4c;
+    background-color: rgba(0, 150, 136, 0.66);
     margin: 0;
     /*z-index:-999;*/
     border-radius: 0 0 10px 10px;
@@ -86,7 +86,7 @@
 
 /*begin clock*/
 body {
-    background: #f39090;
+    background: #6fd1b5;
     /*text-align: center;*/
 }
 
@@ -131,7 +131,7 @@ body {
     display: block;
     height: 4vmin;
     background: #eadfb5;
-    border-top: 1vmin solid #f17d7d;
+    border-top: 1vmin solid #6ac5a9;
     content: '';
     transform: perspective(200px) rotateX(10deg);
 }
@@ -142,7 +142,7 @@ body {
     display: block;
     width: 70%;
     height: 100%;
-    background: #f17d7d;
+    background: #6ac5a9;
     border-radius: 1vmin;
     content: '';
     transform: perspective(100vmin) rotateX(60deg) skew(60deg);
