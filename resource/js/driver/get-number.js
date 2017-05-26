@@ -9,9 +9,7 @@ $(document).ready(function () {
         cache: false,
         success: function (data) {
             data = JSON.parse(data)[0];
-            $('#fromLocation').html('<b>From </b>' + data.from_location);
             $('#toLocation').html('<b>To </b>' + data.to_location);
-            $('#startTime').html('<b>Time </b>' + data.start_time);
             $('#bus').html('<b>Bus </b>' + data.plate_no);
         },
         error: function (error) {
@@ -61,6 +59,7 @@ $(document).ready(function () {
                     $('#studentName').html('<b>Name</b> ' + student_queue.fullname);
                     setData(student_queue.queue);
                 } else {
+                    $('#studentName').html('<b>Name</b> No passengers');
                     $('#btn-accept').prop('disabled', true);
                     $('#btn-decline').prop('disabled', true);
                     setData('0');

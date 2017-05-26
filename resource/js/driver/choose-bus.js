@@ -50,17 +50,12 @@ $(document).ready(function () {
         });
     };
 
-    getLocations('#selectFromLocation');
     getLocations('#selectToLocation');
     getBuses();
 
     $("#submit-btn").click(function () {
-        var d = new Date();
-        var dateStr = d.toISOString().substr(0, 10) + ' ' + $('#selectTime').val() + ':00:00';
         var obj = {
-            from_location_id: $('#selectFromLocation').val(),
             to_location_id: $('#selectToLocation').val(),
-            start_time: dateStr,
             bus_id: $('#selectBus').val()
         };
         $.ajax({

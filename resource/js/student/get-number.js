@@ -27,9 +27,7 @@ $(document).ready(function () {
     }
 
     function initData() {
-        $('#fromLocation').html('<b>From </b>' + route_queue.from_location);
         $('#toLocation').html('<b>To </b>' + route_queue.to_location);
-        $('#startTime').html('<b>Time </b>' + route_queue.start_time);
         $('#bus').html('<b>Bus </b>' + route_queue.plate_no);
         $('#currentQueue').html('<b>' + route_queue.queue + '</b>');
     }

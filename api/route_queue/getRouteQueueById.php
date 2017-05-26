@@ -4,9 +4,8 @@ $db = new DB();
 session_start();
 if (isset($_GET['id'])
 ) {
-    $query = "select rq.id, flc.name as from_location, tlc.name as to_location, b.plate_no, rq.start_time, rq.queue, rq.accept, rq.cancel from route_queue rq "
+    $query = "select rq.id, tlc.name as to_location, b.plate_no, rq.queue, rq.accept, rq.cancel from route_queue rq "
         . "left join bus b on b.id = rq.bus_id "
-        . "left join location flc on flc.id = rq.from_location_id "
         . "left join location tlc on tlc.id = rq.to_location_id "
         . "where rq.id = " . $_GET['id'];
     $data = $db->query($query);

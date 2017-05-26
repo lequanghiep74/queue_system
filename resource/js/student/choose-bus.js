@@ -3,73 +3,6 @@
  */
 $(document).ready(function () {
     $(".button-collapse").sideNav();
-    $("#selectTime").material_select();
-    $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15, // Creates a dropdown of 15 years to control year
-        format: 'dd/mm/yyyy'
-    });
-
-    var getBuses = function (isLoadBus) {
-        $('#selectBus').material_select('destroy');
-        if (!isLoadBus) {
-            $.ajax({
-                url: "/queue/api/general/getBuses.php",
-                type: 'get',
-                cache: false,
-                success: function (data) {
-                    data = JSON.parse(data);
-                    $('#selectBus').val('none');
-                    $('#selectBus option').each(function() {
-                        if ($(this).val() != 'none') {
-                            $(this).remove();
-                        }
-                    });
-                    data.forEach(function (val) {
-                        $('#selectBus')
-                            .append($('<option>', {value: val.id})
-                                .text(val.plate_no));
-                    });
-                    $('#selectBus').material_select();
-                },
-                error: function (error) {
-                    swal("error", error.responseText, "error");
-                }
-            });
-        } else {
-            var d = new Date();
-            var dateStr = d.toISOString().substr(0, 10) + ' ' + $('#selectTime').val() + ':00:00';
-            var obj = {
-                from_location_id: $('#selectFromLocation').val(),
-                to_location_id: $('#selectToLocation').val(),
-                start_time: dateStr
-            };
-            $.ajax({
-                url: "/queue/api/route_queue/getBusOfRouteQueue.php",
-                type: 'get',
-                cache: false,
-                data: obj,
-                success: function (data) {
-                    data = JSON.parse(data);
-                    $('#selectBus').val('none');
-                    $('#selectBus option').each(function() {
-                        if ($(this).val() != 'none') {
-                            $(this).remove();
-                        }
-                    });
-                    data.forEach(function (val) {
-                        $('#selectBus')
-                            .append($('<option>', {value: val.id})
-                                .text(val.plate_no));
-                    });
-                    $('#selectBus').material_select();
-                },
-                error: function (error) {
-                    swal("error", error.responseText, "error");
-                }
-            });
-        }
-    };
 
     var getLocations = function (elementId) {
         $.ajax({
@@ -91,30 +24,11 @@ $(document).ready(function () {
         });
     };
 
-    getLocations('#selectFromLocation');
     getLocations('#selectToLocation');
-    getBuses(false);
-
-    $('#selectFromLocation').on('change', function() {
-        getBuses($('#selectFromLocation').val() && $('#selectToLocation').val() && $('#selectTime').val());
-    });
-
-    $('#selectFromLocation').on('change', function() {
-        getBuses($('#selectFromLocation').val() && $('#selectToLocation').val() && $('#selectTime').val());
-    });
-
-    $('#selectTime').on('change', function() {
-        getBuses($('#selectFromLocation').val() && $('#selectToLocation').val() && $('#selectTime').val());
-    });
 
     $("#submit-btn").click(function () {
-        var d = new Date();
-        var dateStr = d.toISOString().substr(0, 10) + ' ' + $('#selectTime').val() + ':00:00';
         var obj = {
-            from_location_id: $('#selectFromLocation').val(),
-            to_location_id: $('#selectToLocation').val(),
-            start_time: dateStr,
-            bus_id: $('#selectBus').val()
+            to_location_id: $('#selectToLocation').val()
         };
         $.ajax({
             url: "/queue/api/route_queue/getRouteQueue.php",

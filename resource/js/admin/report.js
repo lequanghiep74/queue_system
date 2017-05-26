@@ -57,7 +57,9 @@ $(document).ready(function () {
                             + '<td>' + i++ + '</td>'
                             + '<td>' + val.bus_no + '</td>'
                             + '<td>' + val.plate_no + '</td>'
-                            + '<td>' + val.count + '</td></tr>');
+                            + '<td>' + val.count + '</td>'
+                            + '<td>' + val.queue + '</td>'
+                            + '<td>' + (val.accept * 35) + '฿</td></tr>');
                     });
                 } else {
                     $('#busReport > tbody:last-child').append('<tr><td colspan="4">Empty data</td></tr>');
