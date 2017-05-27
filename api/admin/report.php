@@ -4,7 +4,7 @@ $db = new DB();
 session_start();
 if (isset($_GET['report_date'])
 ) {
-    $query = "select sum(accept) as accept, sum(cancel) as cancel "
+    $query = "select sum(accept) as accept, sum(cancel) as cancel, sum(total) as total "
         . "from route_queue "
         . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_GET['report_date'] . "';";
     $data = $db->query($query);

@@ -6,7 +6,7 @@ if (isset($_GET['route_queue_id'])
 ) {
     $query = "update route_queue set queue = queue + 1 where id = " . $_GET['route_queue_id'];
     $db->query($query);
-    $query = "select queue from route_queue";
+    $query = "select queue from route_queue where id = " . $_GET['route_queue_id'];
     $data = $db->query($query);
     while ($row = $data->fetch_assoc()) {
         $queue_num = $row['queue'];

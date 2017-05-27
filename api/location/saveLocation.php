@@ -4,7 +4,7 @@ $db = new DB();
 session_start();
 if (isset($_GET['name'])
 ) {
-    $query = "insert into location (name) VALUES ('" . $_GET['name'] . "')";
+    $query = "insert into location (name, price) VALUES ('" . $_GET['name'] . "', " . $_GET["price"] . ")";
     if ($db->query($query)) {
         header('ok', true, 200);
     } else {

@@ -4,8 +4,9 @@ $db = new DB();
 session_start();
 if (isset($_GET['id'])
     && isset($_GET['name'])
+    && isset($_GET['price'])
 ) {
-    $query = "update location set name = '" . $_GET['name'] . "' where id = " . $_GET['id'];
+    $query = "update location set name = '" . $_GET['name'] . "', price = " . $_GET['price'] . " where id = " . $_GET['id'];
     if ($db->query($query)) {
         header('ok', true, 200);
     } else {

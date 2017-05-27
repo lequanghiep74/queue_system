@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Choose bus</title>
+    <title>Choose Route</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Import font google-->
@@ -43,16 +43,16 @@
 <body>
 <nav id="nav-color">
     <div class="nav-wrapper">
-        <a href="#!" class="center brand-logo">Choose Bus</a>
+        <a href="#!" class="center brand-logo">Choose Route</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="choose-bus.html">Choose Bus</a></li>
+            <li><a href="choose-bus.html">Choose Route</a></li>
             <li><a href="history.html">History</a></li>
             <li><a href="profile.html">Profile</a></li>
             <li class="logout"><a>Logout</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="choose-bus.html">Choose Bus</a></li>
+            <li><a href="choose-bus.html">Choose Route</a></li>
             <li><a href="history.html">History</a></li>
             <li><a href="profile.html">Profile</a></li>
             <li class="logout"><a>Logout</a></li>
@@ -63,6 +63,15 @@
 <section class="container">
     <div class="row" style="margin-top: 50px">
         <form class="col s12 m12" action="#">
+            <div class="row" id="place-from">
+                <div class="input-field col s10 m6 offset-s1 offset-m3">
+                    <select class="icons" id="selectFromLocation">
+                        <option selected value="" disabled>ABAC Bangna</option>
+                    </select>
+                    <label>From location</label>
+                </div>
+            </div>
+
             <!--place to-->
             <div class="row" id="place-to">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
@@ -73,7 +82,7 @@
                 </div>
             </div>
 
-            <!--choose bus-->
+            <!--Choose Route-->
             <div class="row" id="choose-bus">
                 <div class="input-field col s10 m6 offset-s1 offset-m3">
                     <select class="icons" id="selectBus">
@@ -83,9 +92,9 @@
                 </div>
             </div>
             <!--submit-->
-            <input class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" type="button" value="Next"
+            <button class="btn waves-effect waves-light col s4 m6 offset-s4 offset-m3" type="button" value="Next"
                    id="submit-btn">
-            </input>
+            </button>
         </form>
     </div>
 </section>

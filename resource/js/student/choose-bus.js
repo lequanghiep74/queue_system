@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $(".button-collapse").sideNav();
+    $('#selectFromLocation').material_select();
 
     var getLocations = function (elementId) {
         $.ajax({

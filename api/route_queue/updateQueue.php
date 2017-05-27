@@ -7,11 +7,12 @@ if (isset($_GET['id'])
 ) {
     $query = "";
     if ($_GET['status'] == 1) {
-        $query = "update route_queue set status = " . $_GET['status'] . " where id = " . $_GET['id'];
-        echo $query;
+        $query = "update mydb.route_queue as rq "
+            . "inner join mydb.location as lc on lc.id = rq.to_location_id "
+            . "set rq.status = " . $_GET['status'] . ", rq.total = rq.accept * lc.price "
+            . "where rq.id = " . $_GET['id'];
     } else {
-        $query = "update route_queue set status = " . $_GET['status'] . ", cancel = cancel + accept, accept = 0 where id = " . $_GET['id'];
-        echo $query;
+        $query = "update route_queue set status = " . $_GET['status'] . ", cancel = cancel + accept, accept = 0, total = 0 where id = " . $_GET['id'];
     }
     if ($db->query($query)) {
         $query = '';

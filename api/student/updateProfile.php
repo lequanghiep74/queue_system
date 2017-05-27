@@ -31,7 +31,6 @@ if (isset($_GET['type'])
             $query = "update student set "
                 . "password = '" . $_GET['password'] . "' "
                 . "where id = " . $_GET['id'];
-            echo $query;
             if ($db->query($query) === true) {
                 header(' ', true, 200);
             } else {

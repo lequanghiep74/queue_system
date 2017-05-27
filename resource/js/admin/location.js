@@ -5,11 +5,13 @@ $(document).ready(function () {
     $('#cancel-btn').click(function () {
         location = {};
         $('#location').val('');
+        $('#price').val('');
     });
 
     $("#submit-btn").click(function () {
         var url = location.id ? '/queue/api/location/updateLocation.php' : '/queue/api/location/saveLocation.php';
-        if ($('#location').val() !== '' && $('#location').val() !== null && $('#location').val() !== undefined) {
+        if ($('#location').val() !== '' && $('#location').val() !== null && $('#location').val() !== undefined
+            && $('#price').val() !== '' && $('#price').val() !== null && $('#price').val() !== undefined) {
             $.ajax({
                 url: url,
                 type: 'get',
@@ -17,11 +19,13 @@ $(document).ready(function () {
                 dataType: 'text',
                 data: {
                     id: location.id,
-                    name: $('#location').val()
+                    name: $('#location').val(),
+                    price: $('#price').val()
                 },
                 success: function () {
                     location = {};
                     $('#location').val('');
+                    $('#price').val('');
                     getListLocation();
                 },
                 error: function (error) {
@@ -65,12 +69,14 @@ $(document).ready(function () {
                         $('#tableLocation > tbody:last-child').append('<tr>'
                             + '<td>' + i++ + '</td>'
                             + '<td>' + val.name + '</td>'
+                            + '<td>' + val.price + '</td>'
                             + '<td>' + button + '</td></tr>');
                     });
                     $('.edit').click(function () {
                         var data = JSON.parse($(this).attr('data'));
                         location.id = data.id;
                         $('#location').val(data.name);
+                        $('#price').val(data.price);
                     });
 
                     $('.delete').click(function () {

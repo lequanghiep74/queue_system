@@ -48,13 +48,13 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="report.html">Report</a></li>
             <li><a href="location.html">Location Management</a></li>
-            <li><a href="bus.html">Bus Management</a></li>
+            <li><a href="bus.html">Van Management</a></li>
             <li class="logout"><a>Logout</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
             <li><a href="report.html">Report</a></li>
             <li><a href="location.html">Location Management</a></li>
-            <li><a href="bus.html">Bus Management</a></li>
+            <li><a href="bus.html">Van Management</a></li>
             <li class="logout"><a>Logout</a></li>
         </ul>
     </div>
@@ -66,6 +66,11 @@
                 <input name="location" required placeholder="Enter location" id="location" type="text"
                        class="validate">
                 <label class="teal-text bold" for="location">Location</label>
+            </div>
+            <div class="input-field col s10 m6 offset-s1 offset-m3">
+                <input name="price" required placeholder="Enter price" id="price" type="number"
+                       class="validate">
+                <label class="teal-text bold" for="price">Price</label>
             </div>
         </div>
         <div class="row" style="text-align: center;">
@@ -82,6 +87,7 @@
         <tr>
             <th class="teal-text">No</th>
             <th class="teal-text">Location</th>
+            <th class="teal-text">Price</th>
             <th class="teal-text">Action</th>
         </tr>
         </thead>

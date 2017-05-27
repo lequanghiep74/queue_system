@@ -29,7 +29,7 @@ $(document).ready(function () {
                 data.accept = data.accept || 0;
                 $('#numRejected').html(data.cancel);
                 $('#numAccepted').html(data.accept);
-                $('#totalMoney').html((parseInt(data.accept) * 35) + '฿');
+                $('#totalMoney').html((parseInt(data.total)) + '฿');
                 $('#report').show();
             },
             error: function (error) {
@@ -59,7 +59,7 @@ $(document).ready(function () {
                             + '<td>' + val.plate_no + '</td>'
                             + '<td>' + val.count + '</td>'
                             + '<td>' + val.queue + '</td>'
-                            + '<td>' + (val.accept * 35) + '฿</td></tr>');
+                            + '<td>' + val.total + '฿</td></tr>');
                     });
                 } else {
                     $('#busReport > tbody:last-child').append('<tr><td colspan="4">Empty data</td></tr>');
