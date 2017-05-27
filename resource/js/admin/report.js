@@ -59,7 +59,7 @@ $(document).ready(function () {
                             + '<td>' + val.plate_no + '</td>'
                             + '<td>' + val.count + '</td>'
                             + '<td>' + val.queue + '</td>'
-                            + '<td>' + val.total + '฿</td></tr>');
+                            + '<td>' + (val.total || 0) + '฿</td></tr>');
                     });
                 } else {
                     $('#busReport > tbody:last-child').append('<tr><td colspan="4">Empty data</td></tr>');
