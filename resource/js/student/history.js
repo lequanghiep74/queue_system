@@ -40,7 +40,7 @@ $(document).ready(function () {
             + '</span><br>'
             + '<span class="teal-text-history col s12 m12">'
             + '<i class="material-icons s1">directions_bus</i>'
-            + '<i class="small"><b>Bus </b>' + data.plate_no + '</i>'
+            + '<i class="small"><b>Van </b>' + data.plate_no + '</i>'
             + '</span>'
             + '</div>'
             + '<div class="col s2 ">';

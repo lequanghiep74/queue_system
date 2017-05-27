@@ -10,7 +10,7 @@ $(document).ready(function () {
         success: function (data) {
             data = JSON.parse(data)[0];
             $('#toLocation').html('<b>To </b>' + data.to_location);
-            $('#bus').html('<b>Bus </b>' + data.plate_no);
+            $('#bus').html('<b>Van </b>' + data.plate_no);
         },
         error: function (error) {
             swal("error", error.responseText, "error");
