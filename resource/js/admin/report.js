@@ -29,7 +29,7 @@ $(document).ready(function () {
                 data.accept = data.accept || 0;
                 $('#numRejected').html(data.cancel);
                 $('#numAccepted').html(data.accept);
-                $('#totalMoney').html((parseInt(data.total)) + '฿');
+                $('#totalMoney').html((parseInt(data.total || 0)) + '฿');
                 $('#report').show();
             },
             error: function (error) {
