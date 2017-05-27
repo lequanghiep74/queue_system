@@ -6,7 +6,7 @@ if (isset($_GET['report_date'])
 ) {
     $query = "select sum(accept) as accept, sum(cancel) as cancel, sum(total) as total "
         . "from route_queue "
-        . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_GET['report_date'] . "';";
+        . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_GET['report_date'] . "' and status > 0;";
     $data = $db->query($query);
     if ($data) {
         $datas = array();
