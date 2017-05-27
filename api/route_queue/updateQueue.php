@@ -7,8 +7,8 @@ if (isset($_GET['id'])
 ) {
     $query = "";
     if ($_GET['status'] == 1) {
-        $query = "update mydb.route_queue as rq "
-            . "inner join mydb.location as lc on lc.id = rq.to_location_id "
+        $query = "update route_queue as rq "
+            . "inner join location as lc on lc.id = rq.to_location_id "
             . "set rq.status = " . $_GET['status'] . ", rq.total = rq.accept * lc.price "
             . "where rq.id = " . $_GET['id'];
     } else {
