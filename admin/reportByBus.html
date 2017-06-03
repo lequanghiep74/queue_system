@@ -29,7 +29,7 @@
     <script src="../bower_components/sweetalert/dist/sweetalert.min.js"></script>
 
     <!--Import custom js-->
-    <script src="../resource/js/admin/report.js"></script>
+    <script src="../resource/js/admin/reportByBus.js"></script>
     <script src="../resource/js/general/logout.js"></script>
     <script src="../resource/js/admin/auth.js"></script>
 
@@ -73,45 +73,47 @@
             </div>
             <div class="row" style="text-align: center; margin-top: 15px;">
                 <button value="Show report" type="button" class="btn waves-effect waves-light" name="action"
-                       id="submit-btn">
+                        id="submit-btn">
                     Show report
                 </button>
             </div>
         </div>
     </form>
     <div id="report" hidden>
-        <form>
-            <div class="row">
-                <div class="col s12">
-                    <label class="bold teal-text">Number of customer paid: </label><span id="numAccepted"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <label class="bold teal-text">Number of customer cancel: </label><span id="numRejected"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <label class="bold teal-text">Total Money: </label><span id="totalMoney"></span>
-                </div>
-            </div>
-        </form>
-        <table id="busReport" class="highlight col m6 offset-m3 centered" hidden>
-            <thead class="thead-color">
-            <tr>
-                <th class="teal-text">No</th>
-                <th class="teal-text">Van no</th>
-                <th class="teal-text">Plate no</th>
-                <th class="teal-text">Number of route</th>
-                <th class="teal-text">Sum of queue</th>
-                <th class="teal-text">Total</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            </tbody>
-        </table>
+        <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#accept">Accept report</a></li>
+                <li class="tab"><a href="#cancel">Cancel report</a></li>
+            </ul>
+        </div>
+        <div id="accept">
+            <table id="busAcceptReport" class="highlight col m6 offset-m3 centered">
+                <thead class="thead-color">
+                <tr>
+                    <th class="teal-text">No</th>
+                    <th class="teal-text">Van no</th>
+                    <th class="teal-text">Plate no</th>
+                    <th class="teal-text">Num of accept</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="cancel">
+            <table id="busCancelReport" class="highlight col m6 offset-m3 centered">
+                <thead class="thead-color">
+                <tr>
+                    <th class="teal-text">No</th>
+                    <th class="teal-text">Van no</th>
+                    <th class="teal-text">Plate no</th>
+                    <th class="teal-text">Num of cancel</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 </body>

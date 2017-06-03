@@ -62,7 +62,7 @@ $(document).ready(function () {
                             + '<td>' + (val.total || 0) + '฿</td></tr>');
                     });
                 } else {
-                    $('#busReport > tbody:last-child').append('<tr><td colspan="4">Empty data</td></tr>');
+                    $('#busReport > tbody:last-child').append('<tr><td colspan="6">Empty data</td></tr>');
                 }
                 $('#busReport').show();
             },

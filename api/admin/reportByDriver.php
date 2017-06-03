@@ -4,12 +4,11 @@ $db = new DB();
 session_start();
 if (isset($_GET['report_date'])
 ) {
-    $query = "select b.bus_no, b.plate_no, sum(rq.queue) as queue, count(*) as count, sum(rq.accept) as accept, sum(rq.total) as total "
+    $query = "select d.fullname, sum(rq.bus_id) as bus, sum(rq.total) as total "
         . "from route_queue rq "
-        . "inner join bus b on b.id = rq.bus_id "
-        . "inner join location lc on lc.id = rq.to_location_id "
+        . "inner join driver d on d.id = rq.driver_id "
         . "where DATE_FORMAT(start_time, '%d/%m/%Y') = '" . $_GET['report_date'] . "' "
-        . "group by rq.bus_id";
+        . "group by rq.driver_id";
     $data = $db->query($query);
     if ($data) {
         $datas = array();
